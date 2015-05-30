@@ -23,6 +23,13 @@ public class PushThings : MonoBehaviour
 
 	void OnControllerColliderHit(ControllerColliderHit hit)
 	{
+		var killPlayer = hit.gameObject.GetComponent<KillTargetOnCollision>();
+		if (killPlayer != null)
+		{
+			var health = GetComponent<PlayerHealth>();
+			health.ApplyFallDamage(100.0f);
+		}
+
 		if (hit.collider.attachedRigidbody == null)
 			return;
 
@@ -35,12 +42,12 @@ public class PushThings : MonoBehaviour
 
 		if (hit.collider.attachedRigidbody.isKinematic)
 		{
-			UnityEngine.Debug.Log("PLAY FAIL SOUND");
+			//UnityEngine.Debug.Log("PLAY FAIL SOUND");
 			PlayAudioClipNonRepeat(FailSFX);
 		}
 		else
 		{
-			UnityEngine.Debug.Log("Play scrape sounds");
+			//UnityEngine.Debug.Log("Play scrape sounds");
 			// Calculate push direction from move direction,
 			// we only push objects to the sides never up and down
 			var pushDir = new Vector3(hit.moveDirection.x, 0, hit.moveDirection.z);

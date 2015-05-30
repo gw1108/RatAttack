@@ -16,7 +16,7 @@ public class KillTargetOnTrigger : MonoBehaviour {
 
 	public void OnTriggerEnter(Collider other)
 	{
-		Debug.Log("Trigger enter " + other.gameObject);
+		//Debug.Log("Trigger enter " + other.gameObject);
 		if (RequiredCollision == null || other.gameObject == RequiredCollision)
 		{
 			DamageReceiver.ApplyDamage(Damage);
