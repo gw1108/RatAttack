@@ -15,6 +15,16 @@ ModelImporter:
     100018: can002
     100020: can003
     100022: mouse
+    100024: Box001
+    100026: breadbox
+    100028: cabinet01
+    100030: cheese
+    100032: counter00
+    100034: counter01
+    100036: fridge
+    100038: mouse_house
+    100040: ruler
+    100042: trap
     400000: //RootNode
     400002: Box003
     400004: Box004
@@ -27,6 +37,16 @@ ModelImporter:
     400018: can002
     400020: can003
     400022: mouse
+    400024: Box001
+    400026: breadbox
+    400028: cabinet01
+    400030: cheese
+    400032: counter00
+    400034: counter01
+    400036: fridge
+    400038: mouse_house
+    400040: ruler
+    400042: trap
     2300000: Box003
     2300002: Box004
     2300004: Box005
@@ -38,6 +58,16 @@ ModelImporter:
     2300016: can002
     2300018: can003
     2300020: mouse
+    2300022: Box001
+    2300024: breadbox
+    2300026: cabinet01
+    2300028: cheese
+    2300030: counter00
+    2300032: counter01
+    2300034: fridge
+    2300036: mouse_house
+    2300038: ruler
+    2300040: trap
     3300000: Box003
     3300002: Box004
     3300004: Box005
@@ -49,6 +79,16 @@ ModelImporter:
     3300016: can002
     3300018: can003
     3300020: mouse
+    3300022: Box001
+    3300024: breadbox
+    3300026: cabinet01
+    3300028: cheese
+    3300030: counter00
+    3300032: counter01
+    3300034: fridge
+    3300036: mouse_house
+    3300038: ruler
+    3300040: trap
     4300000: Box003
     4300002: mouse
     4300004: Box004
@@ -60,6 +100,16 @@ ModelImporter:
     4300016: can002
     4300018: can003
     4300020: Box008
+    4300022: counter00
+    4300024: counter01
+    4300026: fridge
+    4300028: ruler
+    4300030: cabinet01
+    4300032: breadbox
+    4300034: cheese
+    4300036: trap
+    4300038: mouse_house
+    4300040: Box001
     9500000: //RootNode
   materials:
     importMaterials: 1
