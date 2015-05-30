@@ -10,6 +10,7 @@
 // Example script display effects when a pickupable weapon is highlighted. 
 // It implements the HighlightOn() and HighlightOff() functions which are called when the systems sends those 
 
+public var actuallyEquips : boolean = true;
 public var selected : boolean = false;
 private var info : SelectableWeapon;
 private var equipped : boolean = false;
@@ -19,7 +20,10 @@ function Start () {
 }
 
 function HighlightOn () {
-	equipped = PickupWeapon.CheckWeapons(gameObject);
+    if(actuallyEquips)
+    {
+	    equipped = PickupWeapon.CheckWeapons(gameObject);
+    }
 	selected = true;
 }
 
@@ -30,7 +34,7 @@ function HighlightOff () {
 function OnGUI () {
 	GUI.skin.box.wordWrap = true;
 	if(selected && !DBStoreController.inStore){
-		var s : String = "(Tab) to Select";
+		var s : String = "(E) to Select";
 		if(equipped){
 			s = "(Already Equipped)";
 		}
