@@ -502,7 +502,7 @@ function Update () {
 	}*/
 
 	if (grounded) {	
-		if (InputDB.GetButtonUp ("Crouch") && PlayerWeapons.canCrouch){
+		if ((InputDB.GetButtonDown ("Crouch") || InputDB.GetButtonUp ("Crouch")) && PlayerWeapons.canCrouch){
 			if(!proneFrame){
 				if(!crouching && !prone){
 					/*if(PlayerWeapons.sprinting && movement.useDive && !diving){

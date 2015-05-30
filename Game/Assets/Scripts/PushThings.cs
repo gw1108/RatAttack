@@ -30,6 +30,9 @@ public class PushThings : MonoBehaviour
 		if (hit.moveDirection.y < -0.3f)
 			return;
 
+		if (hit.gameObject.transform.IsChildOf(transform))
+			return;
+
 		if (hit.collider.attachedRigidbody.isKinematic)
 		{
 			UnityEngine.Debug.Log("PLAY FAIL SOUND");
@@ -37,6 +40,7 @@ public class PushThings : MonoBehaviour
 		}
 		else
 		{
+			UnityEngine.Debug.Log("Play scrape sounds");
 			// Calculate push direction from move direction,
 			// we only push objects to the sides never up and down
 			var pushDir = new Vector3(hit.moveDirection.x, 0, hit.moveDirection.z);
