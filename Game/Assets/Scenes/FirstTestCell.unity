@@ -4145,15 +4145,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: b5d4eda3b5a824ee6b5a06e040ae4043, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 96.9000015
+      value: 98.3899994
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b5d4eda3b5a824ee6b5a06e040ae4043, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -7.44999981
+      value: -.529999971
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b5d4eda3b5a824ee6b5a06e040ae4043, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -64.5
+      value: -64.0800018
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b5d4eda3b5a824ee6b5a06e040ae4043, type: 2}
       propertyPath: m_LocalRotation.x
@@ -4173,7 +4173,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b5d4eda3b5a824ee6b5a06e040ae4043, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: b5d4eda3b5a824ee6b5a06e040ae4043, type: 2}
       propertyPath: m_Enabled
@@ -18808,8 +18808,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 1740336989}
   - 65: {fileID: 1740336990}
+  - 114: {fileID: 1740336991}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: DeathTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18822,8 +18823,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1740336988}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 98.8000031, y: -3.48000002, z: -59.9300003}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 98.6699982, y: -5.42999983, z: -62.8600006}
+  m_LocalScale: {x: 10.3626175, y: 1, z: 9.49048233}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 10
@@ -18839,6 +18840,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1740336991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1740336988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b37344b6077a9b469f3623fcc60b9c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DamageReceiver: {fileID: 2058039303}
+  RequiredCollision: {fileID: 693511743}
+  Damage: 999
 --- !u!1 &1743427315
 GameObject:
   m_ObjectHideFlags: 0
@@ -21221,7 +21236,7 @@ Transform:
   m_PrefabInternal: {fileID: 726923435}
   m_GameObject: {fileID: 2058039295}
   m_LocalRotation: {x: 0, y: -.1377175, z: 0, w: .990471601}
-  m_LocalPosition: {x: 96.9000015, y: -7.44999981, z: -64.5}
+  m_LocalPosition: {x: 98.3899994, y: -.529999971, z: -64.0800018}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children:
   - {fileID: 1332972483}
