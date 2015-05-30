@@ -4,8 +4,9 @@ using System.Collections;
 public class KillTargetOnTrigger : MonoBehaviour {
 
 	public EnemyDamageReceiver DamageReceiver;
+	public PlayerHealth OtherDamageReceiver;
 	public GameObject RequiredCollision;
-	public float Damage;
+	public float Damage = 100;
 
 	private AudioSource m_source;
 
@@ -19,7 +20,14 @@ public class KillTargetOnTrigger : MonoBehaviour {
 		//Debug.Log("Trigger enter " + other.gameObject);
 		if (RequiredCollision == null || other.gameObject == RequiredCollision)
 		{
-			DamageReceiver.ApplyDamage(Damage);
+			if (DamageReceiver)
+			{
+				DamageReceiver.ApplyDamage(Damage);
+			}
+			if (OtherDamageReceiver)
+			{
+				OtherDamageReceiver.ApplyDamage(Damage);
+			}
 			if (m_source)
 			{
 				m_source.Play();

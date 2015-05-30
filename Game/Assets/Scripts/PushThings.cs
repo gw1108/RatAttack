@@ -35,7 +35,15 @@ public class PushThings : MonoBehaviour
 		if (killPlayer != null)
 		{
 			var health = GetComponent<PlayerHealth>();
-			health.ApplyFallDamage(100.0f);
+			if (!PlayerHealth.dead)
+			{
+				health.ApplyFallDamage(100.0f);
+				if (killPlayer.DeathSFX)
+				{
+					m_source.volume = killPlayer.vol;
+					m_source.PlayOneShot(killPlayer.DeathSFX);
+				}
+			}
 		}
 
 		if (hit.collider.attachedRigidbody == null)
