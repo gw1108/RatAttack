@@ -4,10 +4,49 @@ ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
     100000: //RootNode
+    100002: match
+    100004: mouse_bed
+    100006: mouse_house
+    100008: mouse_temp
+    100010: outlet
+    100012: outlet_socket
+    100014: outlet_socket001
+    100016: shotglass
     400000: //RootNode
+    400002: match
+    400004: mouse_bed
+    400006: mouse_house
+    400008: mouse_temp
+    400010: outlet
+    400012: outlet_socket
+    400014: outlet_socket001
+    400016: shotglass
     2300000: //RootNode
+    2300002: match
+    2300004: mouse_bed
+    2300006: mouse_house
+    2300008: mouse_temp
+    2300010: outlet
+    2300012: outlet_socket
+    2300014: outlet_socket001
+    2300016: shotglass
     3300000: //RootNode
+    3300002: match
+    3300004: mouse_bed
+    3300006: mouse_house
+    3300008: mouse_temp
+    3300010: outlet
+    3300012: outlet_socket
+    3300014: outlet_socket001
+    3300016: shotglass
     4300000: mouse_house
+    4300002: shotglass
+    4300004: match
+    4300006: mouse_temp
+    4300008: mouse_bed
+    4300010: outlet
+    4300012: outlet_socket
+    4300014: outlet_socket001
     9500000: //RootNode
   materials:
     importMaterials: 1

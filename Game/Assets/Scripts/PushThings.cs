@@ -4,6 +4,14 @@ using System.Collections;
 public class PushThings : MonoBehaviour
 {
 	public float pushPower = 5.0f;
+	public AudioClip SFX;
+	public float volume = 0.5f;
+	private AudioSource m_source;
+
+	void Start()
+	{
+		m_source = GetComponent<AudioSource>();
+	}
 
 	void OnControllerColliderHit(ControllerColliderHit hit)
 	{
@@ -23,5 +31,14 @@ public class PushThings : MonoBehaviour
 
 		// Apply the push
 		hit.collider.attachedRigidbody.velocity = pushDir * pushPower;
+		if (!m_source.isPlaying)
+		{
+			m_source.clip = SFX;
+			float oldVolume = m_source.volume;
+			m_source.volume = volume;
+			m_source.Play();
+			m_source.volume = oldVolume;
+			//m_source.PlayOneShot(SFX);
+		}
 	}
 }

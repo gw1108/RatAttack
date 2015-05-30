@@ -492,6 +492,7 @@ GameObject:
   - 33: {fileID: 137291644}
   - 23: {fileID: 137291643}
   - 65: {fileID: 137291645}
+  - 54: {fileID: 137291646}
   m_Layer: 0
   m_Name: can
   m_TagString: Untagged
@@ -552,6 +553,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 193.734955, y: 193.734985, z: 214.33754}
   m_Center: {x: 0, y: .0009765625, z: 107.168983}
+--- !u!54 &137291646
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 137291641}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &140346081
 GameObject:
   m_ObjectHideFlags: 0
@@ -1268,7 +1284,7 @@ Transform:
   m_Children:
   - {fileID: 140346092}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 6
 --- !u!114 &268733189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1414,9 +1430,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canControl: 1
   useFixedUpdate: 1
-  crouchDeltaHeight: .75
+  crouchDeltaHeight: .5
   proneDeltaHeight: 1.5
-  useProne: 1
+  useProne: 0
   stopCrouching: 0
   stopProne: 0
   velocityFactor: 2
@@ -1479,9 +1495,9 @@ MonoBehaviour:
     crouchedTime: 0
     proneHoldTime: .300000012
     gravity: 10
-    maxFallSpeed: 100
+    maxFallSpeed: 200
     fallDamageStart: 30
-    fallDamageEnd: 70
+    fallDamageEnd: 100
     fallDamageMax: 100
   jumping:
     enabled: 1
@@ -1630,7 +1646,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23f694c7b4231ed4a9075f90a43df0c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pushPower: 5
+  pushPower: 1
+  SFX: {fileID: 8300000, guid: 63acc5c76ebaf6e479ff67be74e5bc5b, type: 3}
+  volume: .5
 --- !u!1 &284373010
 GameObject:
   m_ObjectHideFlags: 0
@@ -1693,6 +1711,7 @@ GameObject:
   - 33: {fileID: 289087792}
   - 23: {fileID: 289087791}
   - 65: {fileID: 289087793}
+  - 54: {fileID: 289087794}
   m_Layer: 0
   m_Name: breadbox
   m_TagString: Untagged
@@ -1747,12 +1766,27 @@ BoxCollider:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 289087789}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: cdf7d3f1ad11f8d6d00011d98d76c639, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 213.916245, y: 193.7117, z: 176.654877}
   m_Center: {x: -.000244140625, y: .00048828125, z: 88.3274994}
+--- !u!54 &289087794
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 289087789}
+  serializedVersion: 2
+  m_Mass: 20
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &300660615
 GameObject:
   m_ObjectHideFlags: 0
@@ -2375,7 +2409,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 16ccd4cd132fb6e4ba34c5629ffed749, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 16ccd4cd132fb6e4ba34c5629ffed749, type: 3}
@@ -3791,7 +3825,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 693511743}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: .5
   m_Drag: 0
   m_AngularDrag: .00999999978
   m_UseGravity: 1
@@ -16126,6 +16160,7 @@ GameObject:
   - 33: {fileID: 1142224734}
   - 23: {fileID: 1142224733}
   - 65: {fileID: 1142224736}
+  - 54: {fileID: 1142224737}
   m_Layer: 0
   m_Name: can001
   m_TagString: Untagged
@@ -16186,6 +16221,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 193.734955, y: 193.734985, z: 214.33754}
   m_Center: {x: .00048828125, y: .0009765625, z: 107.168983}
+--- !u!54 &1142224737
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1142224732}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1151730615
 GameObject:
   m_ObjectHideFlags: 0
@@ -17723,6 +17773,7 @@ GameObject:
   - 33: {fileID: 1352322493}
   - 23: {fileID: 1352322492}
   - 65: {fileID: 1352322494}
+  - 54: {fileID: 1352322495}
   m_Layer: 0
   m_Name: can003
   m_TagString: Untagged
@@ -17783,6 +17834,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 193.734955, y: 193.734985, z: 214.33754}
   m_Center: {x: 0, y: .00170898438, z: 107.169075}
+--- !u!54 &1352322495
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1352322490}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1358941595
 GameObject:
   m_ObjectHideFlags: 0
@@ -18115,6 +18181,7 @@ GameObject:
   - 33: {fileID: 1449321913}
   - 23: {fileID: 1449321912}
   - 65: {fileID: 1449321914}
+  - 54: {fileID: 1449321915}
   m_Layer: 0
   m_Name: can002
   m_TagString: Untagged
@@ -18175,6 +18242,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 193.734955, y: 193.734985, z: 214.33754}
   m_Center: {x: 0, y: .00146484375, z: 107.168983}
+--- !u!54 &1449321915
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1449321910}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1459839692
 GameObject:
   m_ObjectHideFlags: 0
@@ -18524,11 +18606,27 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 7b5a887172740451fbbe9746a5e942f9, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 11400030, guid: 7b5a887172740451fbbe9746a5e942f9, type: 2}
       propertyPath: defaultFoldout
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400006, guid: 7b5a887172740451fbbe9746a5e942f9, type: 2}
+      propertyPath: useProne
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400006, guid: 7b5a887172740451fbbe9746a5e942f9, type: 2}
+      propertyPath: crouchDeltaHeight
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400006, guid: 7b5a887172740451fbbe9746a5e942f9, type: 2}
+      propertyPath: movement.maxFallSpeed
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400006, guid: 7b5a887172740451fbbe9746a5e942f9, type: 2}
+      propertyPath: movement.fallDamageEnd
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7b5a887172740451fbbe9746a5e942f9, type: 2}
@@ -18809,10 +18907,11 @@ GameObject:
   - 4: {fileID: 1740336989}
   - 65: {fileID: 1740336990}
   - 114: {fileID: 1740336991}
+  - 82: {fileID: 1740336992}
   m_Layer: 0
   m_Name: DeathTrigger
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -1003283189, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -18854,6 +18953,64 @@ MonoBehaviour:
   DamageReceiver: {fileID: 2058039303}
   RequiredCollision: {fileID: 693511743}
   Damage: 999
+--- !u!82 &1740336992
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1740336988}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 1662a9ef20d13b745b98d20f55577736, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1743427315
 GameObject:
   m_ObjectHideFlags: 0
@@ -19898,7 +20055,7 @@ Transform:
   m_Children:
   - {fileID: 1766300782}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 4
 --- !u!114 &1935543780
 MonoBehaviour:
   m_ObjectHideFlags: 0
