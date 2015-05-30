@@ -2,7 +2,85 @@ fileFormatVersion: 2
 guid: e0b3ece5772c0a344b17432bcb4c0362
 ModelImporter:
   serializedVersion: 16
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Box001
+    100004: breadbox
+    100006: cabinet01
+    100008: can
+    100010: can001
+    100012: can002
+    100014: can003
+    100016: cheese
+    100018: counter00
+    100020: counter01
+    100022: fridge
+    100024: mouse
+    100026: mouse_house
+    100028: ruler
+    100030: trap
+    400000: //RootNode
+    400002: Box001
+    400004: breadbox
+    400006: cabinet01
+    400008: can
+    400010: can001
+    400012: can002
+    400014: can003
+    400016: cheese
+    400018: counter00
+    400020: counter01
+    400022: fridge
+    400024: mouse
+    400026: mouse_house
+    400028: ruler
+    400030: trap
+    2300000: Box001
+    2300002: breadbox
+    2300004: cabinet01
+    2300006: can
+    2300008: can001
+    2300010: can002
+    2300012: can003
+    2300014: cheese
+    2300016: counter00
+    2300018: counter01
+    2300020: fridge
+    2300022: mouse
+    2300024: mouse_house
+    2300026: ruler
+    2300028: trap
+    3300000: Box001
+    3300002: breadbox
+    3300004: cabinet01
+    3300006: can
+    3300008: can001
+    3300010: can002
+    3300012: can003
+    3300014: cheese
+    3300016: counter00
+    3300018: counter01
+    3300020: fridge
+    3300022: mouse
+    3300024: mouse_house
+    3300026: ruler
+    3300028: trap
+    4300000: Box001
+    4300002: counter00
+    4300004: mouse
+    4300006: counter01
+    4300008: mouse_house
+    4300010: ruler
+    4300012: cabinet01
+    4300014: fridge
+    4300016: can001
+    4300018: can002
+    4300020: can003
+    4300022: breadbox
+    4300024: cheese
+    4300026: trap
+    4300028: can
+    9500000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0
