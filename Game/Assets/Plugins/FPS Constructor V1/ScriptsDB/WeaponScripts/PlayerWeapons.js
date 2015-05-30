@@ -194,7 +194,7 @@ function ActivateWeapon(){
 	if(hidden)
 		return;
 	if(weapons[selectedWeapon] != null){
-		weapons[selectedWeapon].BroadcastMessage("SelectWeapon");
+		weapons[selectedWeapon].BroadcastMessage("SelectWeapon", SendMessageOptions.DontRequireReceiver);
 	}
 }
 

@@ -5,6 +5,12 @@ using System.Diagnostics;
 
 public class PushThings : MonoBehaviour
 {
+	public static PushThings PlayerInstance
+	{
+		get;
+		private set;
+	}
+
 	public float pushPower = 5.0f;
 	public AudioClip SFX;
 	public AudioClip FailSFX;
@@ -19,6 +25,8 @@ public class PushThings : MonoBehaviour
 		m_source = GetComponent<AudioSource>();
 		timer = new Stopwatch();
 		timer.Start();
+
+		PlayerInstance = this;
 	}
 
 	void OnControllerColliderHit(ControllerColliderHit hit)
