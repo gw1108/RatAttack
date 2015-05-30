@@ -32,11 +32,7 @@ enum RotationAxes { MouseX = 0, MouseY = 1 }
 
 var axes : RotationAxes = RotationAxes.MouseX;
 
-@HideInInspector
-
 var sensitivityX : float = 15F;
-
-@HideInInspector
 
 var sensitivityY : float = 15F;
 
