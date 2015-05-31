@@ -7,6 +7,7 @@
  For additional information contact us info@dastardlybanana.com.
 */
 
+public var actuallyEquips : boolean = true;
 private var selected : boolean = false;
 var weapon : GameObject;
 @HideInInspector
@@ -21,12 +22,22 @@ function Start(){
 }
 
 function Interact(){
-	PickupWeapon.Pickup(this.gameObject);
+    if(actuallyEquips)
+    {
+	    PickupWeapon.Pickup(this.gameObject);
+    }
+    else
+    {
+        Destroy(gameObject);
+    }
 }
 
 function select(a : boolean){
 	this.SendMessage("HighlightOn", SendMessageOptions.DontRequireReceiver);
-	isEquipped = a;
+    if(actuallyEquips)
+    {
+	    isEquipped = a;
+    }
 }
 
 
