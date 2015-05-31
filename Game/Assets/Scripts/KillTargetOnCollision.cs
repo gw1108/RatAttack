@@ -12,4 +12,6 @@ public class KillTargetOnCollision : MonoBehaviour
 	public AudioClip DeathSFX;
 	public float vol = 0.9f;
 	public float delay = 0.0f;
+	public float damage = 100.0f;
+	public bool repeats = true;
 }

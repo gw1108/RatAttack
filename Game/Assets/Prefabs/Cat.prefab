@@ -1530,6 +1530,7 @@ Animation:
   - {fileID: 7400004, guid: 0fa2b66b54d60b740acd3397d58a71ea, type: 3}
   - {fileID: 7400002, guid: 0fa2b66b54d60b740acd3397d58a71ea, type: 3}
   - {fileID: 7400000, guid: 0fa2b66b54d60b740acd3397d58a71ea, type: 3}
+  - {fileID: 7400006, guid: 0fa2b66b54d60b740acd3397d58a71ea, type: 3}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
