@@ -2936,6 +2936,7 @@ MonoBehaviour:
   hitSoundVolume: 1
   deathSound: {fileID: 8300000, guid: 9baba76918c0347e1b453d9b55d997e4, type: 3}
   directionalTexture: {fileID: 100000, guid: b47effc3f2a5840af82518f0f688d56d, type: 2}
+  takesDamage: 1
 --- !u!114 &268733197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3045,6 +3046,7 @@ MonoBehaviour:
   FailSFX: {fileID: 8300000, guid: 8ad32259baea1d4468a69f26d52946f1, type: 3}
   timeBetweenSFX: 1
   volume: .600000024
+  uiWin: {fileID: 1869246912}
 --- !u!1 &270389290
 GameObject:
   m_ObjectHideFlags: 0
@@ -4675,6 +4677,7 @@ GameObject:
   - 33: {fileID: 469862457}
   - 23: {fileID: 469862456}
   - 65: {fileID: 469862458}
+  - 114: {fileID: 469862459}
   m_Layer: 0
   m_Name: fridge
   m_TagString: Untagged
@@ -4689,7 +4692,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 469862454}
   m_LocalRotation: {x: -.707106829, y: 0, z: -0, w: .707106829}
-  m_LocalPosition: {x: 86.4860611, y: 23.9900723, z: -25.4552917}
+  m_LocalPosition: {x: 86.5, y: 24, z: -24.7000008}
   m_LocalScale: {x: 300.716888, y: 61.6435318, z: 2.54529667}
   m_Children: []
   m_Father: {fileID: 883955832}
@@ -4735,6 +4738,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: .0764647275, y: .407315105, z: 18.8056717}
   m_Center: {x: .000111166395, y: .000418402458, z: -.0224294774}
+--- !u!114 &469862459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 469862454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbfe0ea0593b2c84e8d0ff490564e569, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &475385518
 GameObject:
   m_ObjectHideFlags: 0
@@ -24604,6 +24618,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1825566173}
+  - {fileID: 1869246908}
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_AnchorMin: {x: 0, y: 0}
@@ -26014,6 +26029,146 @@ Transform:
   - {fileID: 1977045252}
   m_Father: {fileID: 2085824658}
   m_RootOrder: 0
+--- !u!1 &1869246907
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 1869246908}
+  - 222: {fileID: 1869246913}
+  - 114: {fileID: 1869246912}
+  - 114: {fileID: 1869246911}
+  - 82: {fileID: 1869246909}
+  m_Layer: 5
+  m_Name: Win
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1869246908
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1869246907}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1703086724}
+  m_RootOrder: 1
+  m_AnchorMin: {x: .5, y: .5}
+  m_AnchorMax: {x: .5, y: .5}
+  m_AnchoredPosition: {x: -13, y: 19}
+  m_SizeDelta: {x: 662, y: 320}
+  m_Pivot: {x: .5, y: .5}
+--- !u!82 &1869246909
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1869246907}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 240951ac966ae714ca55af1832d2dfd6, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 2
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!114 &1869246911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1869246907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -900027084, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: .5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
+--- !u!114 &1869246912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1869246907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 130
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: You Win
+--- !u!222 &1869246913
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1869246907}
 --- !u!1 &1881861704
 GameObject:
   m_ObjectHideFlags: 0
@@ -27471,7 +27626,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1990852630}
   m_LocalRotation: {x: -.707106829, y: 0, z: -0, w: .707106829}
-  m_LocalPosition: {x: 96.2754669, y: 24.1233006, z: -69.2309265}
+  m_LocalPosition: {x: 96.2799988, y: 24.1200008, z: -46.6599998}
   m_LocalScale: {x: .0264779646, y: .0264779646, z: .0264779646}
   m_Children: []
   m_Father: {fileID: 883955832}
@@ -27528,7 +27683,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: .0500000007
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0

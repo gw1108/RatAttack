@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Timers;
 using System.Diagnostics;
+using UnityEngine.UI;
 
 public class PushThings : MonoBehaviour
 {
@@ -16,6 +17,8 @@ public class PushThings : MonoBehaviour
 	public AudioClip FailSFX;
 	public float timeBetweenSFX = 2.0f;
 	public float volume = 0.5f;
+
+	public Text uiWin;
 
 	private Stopwatch timer;
 	private AudioSource m_source;
@@ -44,6 +47,14 @@ public class PushThings : MonoBehaviour
 					m_source.PlayOneShot(killPlayer.DeathSFX);
 				}
 			}
+		}
+
+		var win = hit.gameObject.GetComponent<YouWin>();
+		if (win)
+		{
+			//you win display you win text!
+			uiWin.gameObject.SetActive(true);
+			PlayerHealth.singleton.takesDamage = false;
 		}
 
 		if (hit.collider.attachedRigidbody == null)
