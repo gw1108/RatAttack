@@ -8,6 +8,7 @@ public class KillTargetOnTrigger : MonoBehaviour {
 	public PlayerHealth OtherDamageReceiver;
 	public GameObject RequiredCollision;
 	public float Damage = 100.0f;
+	public GameObject[] InstantiateFX;
 
 	private AudioSource m_source;
 
@@ -33,6 +34,10 @@ public class KillTargetOnTrigger : MonoBehaviour {
 			if (m_source)
 			{
 				m_source.Play();
+			}
+			foreach(GameObject go in InstantiateFX)
+			{
+				go.SetActive(true);
 			}
 		}
 	}

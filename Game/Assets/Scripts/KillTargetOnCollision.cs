@@ -14,4 +14,13 @@ public class KillTargetOnCollision : MonoBehaviour
 	public float delay = 0.0f;
 	public float damage = 100.0f;
 	public bool repeats = true;
+
+	public void OnKillPlayer()
+	{
+		var anim = GetComponentInParent<Animator>();
+		if (anim)
+		{
+			anim.SetTrigger("Attack");
+		}
+	}
 }

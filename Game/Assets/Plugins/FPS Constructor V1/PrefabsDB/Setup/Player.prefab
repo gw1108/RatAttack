@@ -40,6 +40,7 @@ GameObject:
   - 114: {fileID: 11400042}
   - 114: {fileID: 11460014}
   - 114: {fileID: 11476778}
+  - 54: {fileID: 5401140}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -212,6 +213,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!1 &130370
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 430370}
+  - 82: {fileID: 8230370}
+  m_Layer: 0
+  m_Name: GlobalMusic
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &131310
 GameObject:
   m_ObjectHideFlags: 1
@@ -1882,6 +1899,7 @@ Transform:
   m_Children:
   - {fileID: 476778}
   - {fileID: 400004}
+  - {fileID: 430370}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!1002 &400003
@@ -2007,6 +2025,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 400000}
   m_RootOrder: 1
+--- !u!4 &430370
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 130370}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1124.24316, y: -37.7127495, z: 1086.2522}
+  m_LocalScale: {x: 1.33333337, y: 1.33333337, z: 1.33333337}
+  m_Children: []
+  m_Father: {fileID: 400002}
+  m_RootOrder: 2
 --- !u!4 &431310
 Transform:
   m_ObjectHideFlags: 1
@@ -3865,6 +3895,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 176780}
   m_Mesh: {fileID: 4300000, guid: f11e293ec05e7c344828c70a82dcef64, type: 3}
+--- !u!54 &5401140
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!54 &5431310
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -4172,6 +4217,64 @@ AudioSource:
     m_Curve:
     - time: 0
       value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!82 &8230370
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 130370}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 27122fb7f424b9141bcf0161f65efb42, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 0
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 2
+  BypassEffects: 1
+  BypassListenerEffects: 1
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: .5
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -5769,8 +5872,8 @@ MonoBehaviour:
   emptyFireAnim: 
   reloadAnim: Reload
   emptyReloadAnim: Reload
-  takeOutAnim: Take 001
-  putAwayAnim: Take 001
+  takeOutAnim: Walk
+  putAwayAnim: Walk
   enterSecondaryAnim: EnterSecondary
   exitSecondaryAnim: ExitSecondary
   reloadIn: ReloadIn
@@ -5780,7 +5883,7 @@ MonoBehaviour:
   secondarySprintAnim: 
   walkSpeedModifier: 20
   walkWhenAiming: 0
-  sprintAnimation: Take 001
+  sprintAnimation: Walk
   nullAnim: Null
   secondaryNullAnim: 
   idleAnim: HoldupEnd
@@ -5828,10 +5931,10 @@ MonoBehaviour:
   index: -1
   lastIndex: -1
   melee: 1
-  random: 1
+  random: 0
   lastSwingTime: 0
   resetTime: 0
-  gs: {fileID: 11431336}
+  gs: {fileID: 11460062}
 --- !u!114 &11431312
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5846,6 +5949,7 @@ MonoBehaviour:
   actuallyEquips: 1
   particleEffectFade: {fileID: 0}
   addsGrenades: 0
+  destroysOnPickup: 1
   weapon: {fileID: 160204}
   WeaponInfo: {fileID: 0}
   isEquipped: 1
@@ -6742,7 +6846,7 @@ MonoBehaviour:
   fireSound: {fileID: 0}
   fireVolume: 1
   firePitch: 1.12
-  fireRate: 0
+  fireRate: 1.5
   autoFire: 1
   fireAnim: 0
   delay: .400000006
@@ -6752,7 +6856,7 @@ MonoBehaviour:
   burstFire: 0
   burstCount: 3
   burstTime: .219999999
-  reloadTime: .25
+  reloadTime: 1.5
   emptyReloadTime: 1
   addOneBullet: 0
   waitforReload: 0

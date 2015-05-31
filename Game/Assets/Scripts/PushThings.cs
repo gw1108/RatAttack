@@ -120,6 +120,7 @@ public class PushThings : MonoBehaviour
 			{
 				Destroy(killPlayer);
 			}
+			killPlayer.OnKillPlayer();
 
 			yield return new WaitForSeconds(killPlayer.delay);
 			killingPlayer = false;
