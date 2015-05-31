@@ -27,6 +27,7 @@ public class KillTargetOnTrigger : MonoBehaviour {
 			}
 			if (OtherDamageReceiver)
 			{
+				Debug.Log(gameObject + "WTF");
 				OtherDamageReceiver.ApplyDamage(Damage);
 			}
 			if (m_source)

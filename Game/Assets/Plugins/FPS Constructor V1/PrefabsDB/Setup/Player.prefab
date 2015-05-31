@@ -43,7 +43,7 @@ GameObject:
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -1376725286, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -6892,7 +6892,7 @@ MonoBehaviour:
   throwStrength: 400
   upStr: 155
   grenadePrefab: {fileID: 176778}
-  grenades: 457
+  grenades: 0
   GetGrenadeSFX: {fileID: 8300000, guid: 985309dca15304e9383a617798c3a122, type: 3}
   volumeScale: .850000024
   grenadeNotific: {fileID: 0}
