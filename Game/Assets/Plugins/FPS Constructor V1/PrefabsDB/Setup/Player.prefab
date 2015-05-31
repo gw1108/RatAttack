@@ -40,10 +40,11 @@ GameObject:
   - 114: {fileID: 11400042}
   - 114: {fileID: 11460014}
   - 114: {fileID: 11476778}
+  - 54: {fileID: 5401140}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -1376725286, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -206,12 +207,28 @@ GameObject:
   - 114: {fileID: 11405720}
   - 114: {fileID: 11405716}
   m_Layer: 9
-  m_Name: Cheese
+  m_Name: FakeCheese
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!1 &130370
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 430370}
+  - 82: {fileID: 8230370}
+  m_Layer: 0
+  m_Name: GlobalMusic
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &131310
 GameObject:
   m_ObjectHideFlags: 1
@@ -1323,6 +1340,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &158220
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 458220}
+  - 82: {fileID: 8258220}
+  - 114: {fileID: 11458218}
+  - 114: {fileID: 11458220}
+  - 114: {fileID: 11458216}
+  m_Layer: 9
+  m_Name: Cheese
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
 --- !u!1 &160020
 GameObject:
   m_ObjectHideFlags: 1
@@ -1863,8 +1899,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 431452}
-  - {fileID: 405720}
+  - {fileID: 458220}
   - {fileID: 431392}
+  - {fileID: 405720}
   m_Father: {fileID: 400006}
   m_RootOrder: 1
 --- !u!1002 &400001
@@ -1882,6 +1919,7 @@ Transform:
   m_Children:
   - {fileID: 476778}
   - {fileID: 400004}
+  - {fileID: 430370}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!1002 &400003
@@ -2006,7 +2044,19 @@ Transform:
   m_LocalScale: {x: .495280027, y: .495279968, z: .495279968}
   m_Children: []
   m_Father: {fileID: 400000}
-  m_RootOrder: 1
+  m_RootOrder: 3
+--- !u!4 &430370
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 130370}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1124.24316, y: -37.7127495, z: 1086.2522}
+  m_LocalScale: {x: 1.33333337, y: 1.33333337, z: 1.33333337}
+  m_Children: []
+  m_Father: {fileID: 400002}
+  m_RootOrder: 2
 --- !u!4 &431310
 Transform:
   m_ObjectHideFlags: 1
@@ -2940,6 +2990,18 @@ Transform:
   - {fileID: 431422}
   m_Father: {fileID: 400000}
   m_RootOrder: 0
+--- !u!4 &458220
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 158220}
+  m_LocalRotation: {x: -.00295899878, y: -.000291999895, z: .0125699956, w: -.999916613}
+  m_LocalPosition: {x: .181691498, y: -.104226708, z: -.153482497}
+  m_LocalScale: {x: .495280027, y: .495279968, z: .495279968}
+  m_Children: []
+  m_Father: {fileID: 400000}
+  m_RootOrder: 1
 --- !u!4 &460020
 Transform:
   m_ObjectHideFlags: 1
@@ -3865,6 +3927,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 176780}
   m_Mesh: {fileID: 4300000, guid: f11e293ec05e7c344828c70a82dcef64, type: 3}
+--- !u!54 &5401140
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!54 &5431310
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -4187,6 +4264,64 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!82 &8230370
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 130370}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 27122fb7f424b9141bcf0161f65efb42, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 0
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 2
+  BypassEffects: 1
+  BypassListenerEffects: 1
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: .5
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!82 &8231310
 AudioSource:
   m_ObjectHideFlags: 1
@@ -4374,6 +4509,129 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 131452}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 7cbb81d116edc4ec3b8d32c117e75348, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 255
+  DopplerLevel: 1
+  MinDistance: 0
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 2
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 1.02929461e-35
+      outSlope: 7.51376181e-38
+      tangentMode: 0
+    - time: .000200000009
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: .000400000019
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: .000800000038
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: .00160000008
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: .00320000015
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: .0064000003
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: .0128000006
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: .0256000012
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: .0512000024
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: .102400005
+      value: .996677756
+      inSlope: -.324437857
+      outSlope: -7.62919044
+      tangentMode: 0
+    - time: .20480001
+      value: .53859961
+      inSlope: -2.66211867
+      outSlope: -2.21390796
+      tangentMode: 0
+    - time: .409600019
+      value: .280636072
+      inSlope: -.725833476
+      outSlope: -.598932087
+      tangentMode: 0
+    - time: .819200039
+      value: .143334925
+      inSlope: -.189776972
+      outSlope: -.155947968
+      tangentMode: 0
+    - time: 1
+      value: .117878191
+      inSlope: 1.02929461e-35
+      outSlope: 7.51376181e-38
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!82 &8258220
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 158220}
   m_Enabled: 1
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: 7cbb81d116edc4ec3b8d32c117e75348, type: 3}
@@ -5730,7 +5988,7 @@ MonoBehaviour:
   locked: 0
   weaponClass: 0
   weaponClassName: 
-  gunDescription: Cheese!
+  gunDescription: Chees-...Hey, wait this is fake!
   lockedDescription: 
   gunName: Cheese
   buyPrice: 150
@@ -5769,8 +6027,8 @@ MonoBehaviour:
   emptyFireAnim: 
   reloadAnim: Reload
   emptyReloadAnim: Reload
-  takeOutAnim: Take 001
-  putAwayAnim: Take 001
+  takeOutAnim: Walk
+  putAwayAnim: Walk
   enterSecondaryAnim: EnterSecondary
   exitSecondaryAnim: ExitSecondary
   reloadIn: ReloadIn
@@ -5780,7 +6038,7 @@ MonoBehaviour:
   secondarySprintAnim: 
   walkSpeedModifier: 20
   walkWhenAiming: 0
-  sprintAnimation: Take 001
+  sprintAnimation: Walk
   nullAnim: Null
   secondaryNullAnim: 
   idleAnim: HoldupEnd
@@ -5828,10 +6086,10 @@ MonoBehaviour:
   index: -1
   lastIndex: -1
   melee: 1
-  random: 1
+  random: 0
   lastSwingTime: 0
   resetTime: 0
-  gs: {fileID: 11431336}
+  gs: {fileID: 11460062}
 --- !u!114 &11431312
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5846,6 +6104,7 @@ MonoBehaviour:
   actuallyEquips: 1
   particleEffectFade: {fileID: 0}
   addsGrenades: 0
+  destroysOnPickup: 1
   weapon: {fileID: 160204}
   WeaponInfo: {fileID: 0}
   isEquipped: 1
@@ -6449,6 +6708,206 @@ MonoBehaviour:
   swayRate: {x: 0, y: 0}
   swayAmplitude: {x: 0, y: 0}
   overwriteSway: 0
+--- !u!114 &11458216
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 158220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0c6f392425c04053863a049b25a18c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  kickbackAngle: 0
+  xKickbackFactor: .5
+  maxKickback: 0
+  kickbackAim: 0
+  crouchKickbackMod: .600000024
+  proneKickbackMod: .349999994
+  moveKickbackMod: 1.29999995
+  recoilDelay: .109999999
+  standardSpread: 0
+  maxSpread: .5
+  crouchSpreadModifier: .699999988
+  proneSpreadModifier: .400000006
+  moveSpreadModifier: 1.5
+  standardSpreadRate: 0
+  aimSpreadRate: 0
+  aimSpread: 0
+  spDecRate: 0
+  ammoLeft: 0
+  ammoPerClip: 1
+  ammoPerShot: 1
+  clips: 1
+  maxClips: 1
+  infiniteAmmo: 1
+  ammoType: 0
+  fireSound: {fileID: 0}
+  fireVolume: 1
+  firePitch: 1.12
+  fireRate: 1
+  autoFire: 1
+  fireAnim: 0
+  delay: .400000006
+  emptySound: {fileID: 0}
+  emptyVolume: 1
+  emptyPitch: 1
+  burstFire: 0
+  burstCount: 3
+  burstTime: .219999999
+  reloadTime: .25
+  emptyReloadTime: 1
+  addOneBullet: 0
+  waitforReload: 0
+  progressiveReload: 0
+  progressiveReset: 0
+  reloadInTime: .5
+  reloadOutTime: .5
+  range: 2
+  force: 0
+  damage: 0
+  shotCount: 0
+  penetrateVal: 1
+  hasFalloff: 0
+  minFalloffDist: 10
+  maxFalloffDist: 100
+  falloffCoefficient: 1
+  falloffDistanceScale: 4
+  projectile: {fileID: 0}
+  initialSpeed: 150
+  projectileCount: 1
+  launchPosition: {fileID: 0}
+  tracer: {fileID: 0}
+  traceEvery: 0
+  simulateTime: .0199999996
+  minDistForTracer: 2
+  sway: 0
+  moveSwayRate: {x: 2.5, y: 5}
+  moveSwayAmplitude: {x: .0399999991, y: .00999999978}
+  runSwayRate: {x: 4.5, y: .899999976}
+  runAmplitude: {x: .0399999991, y: .0399999991}
+  idleSwayRate: {x: 2, y: 1}
+  idleAmplitude: {x: .00200000009, y: .00100000005}
+  secondaryWeapon: {fileID: 0}
+  secondaryInterrupt: 0
+  secondaryFire: 0
+  enterSecondaryTime: .5
+  exitSecondaryTime: .5
+  minCharge: 0
+  maxCharge: 10
+  chargeLevel: 0
+  forceFire: 0
+  chargeLoop: {fileID: 0}
+  chargeAuto: 0
+  chargeCoefficient: 1.10000002
+  additionalAmmoPerCharge: 0
+  idleTime: 0
+  timeToIdle: 7
+  takeOutTime: .600000024
+  putAwayTime: .400000006
+  useZKickBack: 1
+  kickBackZ: 2
+  zRetRate: 1
+  maxZ: .300000012
+  overrideAvoidance: 0
+  avoids: 1
+  rot: {x: 0, y: 0, z: 0}
+  pos: {x: 0, y: 0, z: 0}
+  dist: 2
+  minDist: 1.5
+  shellEjection: 0
+  ejectorPosition: {fileID: 0}
+  ejectDelay: 0
+  shell: {fileID: 0}
+  scale: 0
+  crosshairObj: {fileID: 0}
+  crosshairSize: 0
+  gunActive: 0
+  inDelay: 0
+  nextFireTime: 0
+  secondaryActive: 0
+  isPrimaryWeapon: 1
+  aim: 0
+  aim2: 0
+  gunDisplayed: 0
+  ammo: {fileID: 0}
+  sprint: {fileID: 0}
+  wepDis: {fileID: 0}
+  aim1: {fileID: 0}
+  mouseY: {fileID: 0}
+  mouseX: {fileID: 0}
+  reloadCancel: 0
+  sprayOn: 0
+  sprayObj: {fileID: 0}
+  sprayScript: {fileID: 0}
+  deltaTimeCoefficient: 1
+  forceFalloffCoefficient: .99000001
+  loopSound: {fileID: 0}
+  releaseSound: {fileID: 0}
+  ammoPerSecond: 1
+  chargeWeapon: 0
+  chargeReleased: 0
+  chargeLocked: 0
+  gunType: 0
+  hitBox: 0
+  sharesAmmo: 0
+  shareLoadedAmmo: 0
+  ammoSetUsed: 0
+  managerObject: {fileID: 0}
+  ammoManagerScript: {fileID: 0}
+  effectsManager: {fileID: 0}
+  CM: {fileID: 0}
+  shotPropertiesFoldout: 0
+  firePropertiesFoldout: 1
+  accuracyFoldout: 0
+  altFireFoldout: 1
+  ammoReloadFoldout: 0
+  audioVisualFoldout: 1
+  swayStartTime: 0
+  swayRate: {x: 0, y: 0}
+  swayAmplitude: {x: 0, y: 0}
+  overwriteSway: 0
+--- !u!114 &11458218
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 158220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a82a702f1fc864876b1cb28b83fe846a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  drops: {fileID: 100000, guid: 4b0115b252e66433591c5a1cb881b43b, type: 2}
+  owned: 0
+  locked: 0
+  weaponClass: 0
+  weaponClassName: 
+  gunDescription: Cheese!
+  lockedDescription: 
+  gunName: Cheese
+  buyPrice: 150
+  ammoPrice: 0
+  sellPrice: 75
+  sellPriceUpgraded: 0
+  icon: {fileID: 0}
+  upgradesApplied: 
+  upgrades: []
+  canBeSold: 1
+  gun: {fileID: 0}
+--- !u!114 &11458220
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 158220}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f710eface1bc04943a7ff2c68e1dadef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  displayTime: 2
 --- !u!114 &11460014
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6742,7 +7201,7 @@ MonoBehaviour:
   fireSound: {fileID: 0}
   fireVolume: 1
   firePitch: 1.12
-  fireRate: 0
+  fireRate: 1.5
   autoFire: 1
   fireAnim: 0
   delay: .400000006
@@ -6752,7 +7211,7 @@ MonoBehaviour:
   burstFire: 0
   burstCount: 3
   burstTime: .219999999
-  reloadTime: .25
+  reloadTime: 1.5
   emptyReloadTime: 1
   addOneBullet: 0
   waitforReload: 0
@@ -6892,7 +7351,7 @@ MonoBehaviour:
   throwStrength: 400
   upStr: 155
   grenadePrefab: {fileID: 176778}
-  grenades: 457
+  grenades: 0
   GetGrenadeSFX: {fileID: 8300000, guid: 985309dca15304e9383a617798c3a122, type: 3}
   volumeScale: .850000024
   grenadeNotific: {fileID: 0}

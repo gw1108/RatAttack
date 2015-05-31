@@ -13,13 +13,6 @@ public class OnHighlightWeaponEat : MonoBehaviour
 	public float vol = 0.8f;
 	public float heal = 10.0f;
 
-	private HighlightWeapon highlightWeapon;
-
-	private void Start()
-	{
-		highlightWeapon = GetComponent<HighlightWeapon>();
-	}
-
 	void InteractingWithSelf()
 	{
 		//if (Input.GetKeyDown(KeyCode.E) || Input.GetMouseButtonDown(0))
@@ -30,7 +23,6 @@ public class OnHighlightWeaponEat : MonoBehaviour
 				PushThings.PlayerInstance.GetComponent<AudioSource>().volume = vol;
 				PushThings.PlayerInstance.GetComponent<AudioSource>().PlayOneShot(sfx);
 
-				Debug.Log("HEALING : " + heal);
 				PlayerHealth.singleton.health = heal + PlayerHealth.singleton.health;
 			//}
 		//}

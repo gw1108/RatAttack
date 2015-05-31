@@ -240,7 +240,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: 2a9241dd63f951445b2ba7c6261aecfa, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -374,7 +374,7 @@ MonoBehaviour:
   DeathSFX: {fileID: 8300000, guid: 2a9241dd63f951445b2ba7c6261aecfa, type: 3}
   vol: .899999976
   delay: 0
-  damage: 65
+  damage: 1000
   repeats: 0
 --- !u!114 &11446818
 MonoBehaviour:
@@ -407,6 +407,7 @@ MonoBehaviour:
   actuallyEquips: 0
   particleEffectFade: {fileID: 0}
   addsGrenades: 0
+  destroysOnPickup: 1
   weapon: {fileID: 0}
   WeaponInfo: {fileID: 0}
   isEquipped: 0

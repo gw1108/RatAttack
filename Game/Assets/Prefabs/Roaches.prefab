@@ -8,6 +8,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 470108}
+  - 114: {fileID: 11414056}
   m_Layer: 0
   m_Name: Roaches
   m_TagString: Untagged
@@ -377,8 +378,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 170108}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 63.9708481, y: 21.7845478, z: -85.775383}
+  m_LocalRotation: {x: 0, y: .70710665, z: 0, w: .707106948}
+  m_LocalPosition: {x: 96.4000015, y: 21.6900005, z: -42.1100006}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 470148}
@@ -1196,6 +1197,25 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!114 &11414056
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fac25802372a4c22bde06510f4006e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 25
+  deathEffect: {fileID: 0}
+  effectDelay: 0
+  multiplier: 1
+  deadReplacement: {fileID: 0}
+  playerObject: {fileID: 0}
+  useHitEffect: 1
+  isEnemy: 0
 --- !u!114 &11471904
 MonoBehaviour:
   m_ObjectHideFlags: 1

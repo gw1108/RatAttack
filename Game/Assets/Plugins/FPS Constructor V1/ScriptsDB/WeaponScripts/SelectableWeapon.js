@@ -10,6 +10,7 @@
 public var actuallyEquips : boolean = true;
 public var particleEffectFade : GameObject;
 public var addsGrenades : boolean = false;
+public var destroysOnPickup : boolean = true;
 private var selected : boolean = false;
 var weapon : GameObject;
 @HideInInspector
@@ -39,7 +40,10 @@ function Interact(){
         {
             particleEffectFade.SendMessage("StopEmitter");
         }
-        Destroy(gameObject);
+        if(destroysOnPickup)
+        {
+            Destroy(gameObject);
+        }
     }
     SendMessage("InteractingWithSelf", SendMessageOptions.DontRequireReceiver);
 }
