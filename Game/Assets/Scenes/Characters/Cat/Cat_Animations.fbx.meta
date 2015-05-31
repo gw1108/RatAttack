@@ -52,6 +52,14 @@ ModelImporter:
     100092: bone_tail01_05
     100094: //RootNode
     100096: geo_cat
+    100098: Death_Sit_Cycle_fr_330_360
+    100100: Death_Sit_Intro_fr_300_330
+    100102: HeadButt_Sit_fr_400_530
+    100104: Idle_Sit_fr_100_130
+    100106: Idle_Stand_fr_000_030
+    100108: Swipe_Left_Sit_fr_500_530
+    100110: Swipe_Sit_fr_200_130
+    100112: Walk_fr_600_630
     400000: bone_head01
     400002: bone_head01_twist01
     400004: bone_l_arm01_ball01
@@ -101,6 +109,14 @@ ModelImporter:
     400092: bone_tail01_05
     400094: //RootNode
     400096: geo_cat
+    400098: Death_Sit_Cycle_fr_330_360
+    400100: Death_Sit_Intro_fr_300_330
+    400102: HeadButt_Sit_fr_400_530
+    400104: Idle_Sit_fr_100_130
+    400106: Idle_Stand_fr_000_030
+    400108: Swipe_Left_Sit_fr_500_530
+    400110: Swipe_Sit_fr_200_130
+    400112: Walk_fr_600_630
     4300000: geo_cat
     7400000: SitIdle
     7400002: CatSitAttack
