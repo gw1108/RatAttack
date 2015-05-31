@@ -1,13 +1,20 @@
 fileFormatVersion: 2
-guid: d97b28c6704f5ee499d67f861e5caa67
+guid: 819e3ae3dab093448936e62f03901a27
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: toaster
+    100000: Object002
+    100002: //RootNode
+    100004: stove_counter001
+    400000: Object002
+    400002: //RootNode
+    400004: stove_counter001
+    2300000: Object002
+    2300002: stove_counter001
+    3300000: Object002
+    3300002: stove_counter001
+    4300000: stove_counter001
+    4300002: Object002
     9500000: //RootNode
   materials:
     importMaterials: 1

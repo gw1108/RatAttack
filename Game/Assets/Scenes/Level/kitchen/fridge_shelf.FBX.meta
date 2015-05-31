@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d97b28c6704f5ee499d67f861e5caa67
+guid: dda01b05e98bc6f47936f150e2976aad
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
@@ -7,7 +7,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: toaster
+    4300000: shelf
     9500000: //RootNode
   materials:
     importMaterials: 1
