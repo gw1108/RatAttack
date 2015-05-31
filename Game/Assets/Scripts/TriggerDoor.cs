@@ -9,13 +9,34 @@ using UnityEngine;
 
 public class TriggerDoor : MonoBehaviour
 {
+	public Animation anim;
+	bool open = true;
+	bool first = true;
+
 	public void OnTriggerEnter(Collider hit)
 	{
-		animation.Play("Open");
+		if (!open)
+		{
+			open = true;
+			anim.Play("Open");
+			if (first)
+			{
+				transform.parent = transform.parent.parent;
+				first = false;
+			}
+		}
 	}
 
 	public void OnTriggerExit(Collider hit)
 	{
-		animation.Play("Close");
+		if (open)
+		{
+			open = false;
+			if (first)
+			{
+				transform.parent = transform.parent.parent;
+				first = false;
+			}
+		}
 	}
 }

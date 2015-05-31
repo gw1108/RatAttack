@@ -23,7 +23,7 @@ public class ControlHands : MonoBehaviour
 		{
 			var sel = hit.collider.GetComponent<SelectableWeapon>();
 			//animate
-			if (!m_wasHolding && sel == null && !hit.collider.isTrigger)
+			if (!m_wasHolding && sel == null && !hit.collider.isTrigger && (hit.rigidbody != null && !hit.rigidbody.isKinematic))
 			{
 				animation.Play("HoldUp");
 				m_wasHolding = true;

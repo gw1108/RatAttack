@@ -13,7 +13,7 @@ var reloadWhileSprinting : boolean = false;
 var displayTime : float = 1; //How long slot-related message is shown for
 var sensitivity : float = 13; //Sensitivity of mouse
 var inverted : boolean = false;	//Is the mouse y-axis inverted
-var interactDistance : float = 5; //How far can an object be to be interacted with
+var interactDistance : float = 2.5f; //How far can an object be to be interacted with
 private var lastHit : Transform; //the last object we hit
 var interactMask : LayerMask; //Mask for raycast
 
@@ -62,6 +62,7 @@ function Start(){
 	// Select the first weapon
 	//playerActive = true;
 	ActivateWeapon();
+    interactDistance = 2.0f;
 }
 function Awake () {
 	if(PW)

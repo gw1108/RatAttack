@@ -8,6 +8,8 @@
 */
 
 public var actuallyEquips : boolean = true;
+public var particleEffectFade : GameObject;
+public var addsGrenades : boolean = false;
 private var selected : boolean = false;
 var weapon : GameObject;
 @HideInInspector
@@ -26,8 +28,17 @@ function Interact(){
     {
 	    PickupWeapon.Pickup(this.gameObject);
     }
+    else if(addsGrenades)
+    {
+        PlayerHealth.singleton.SendMessage("GetGrenades");
+        Destroy(gameObject);
+    }
     else
     {
+        if(particleEffectFade)
+        {
+            particleEffectFade.SendMessage("StopEmitter");
+        }
         Destroy(gameObject);
     }
 }

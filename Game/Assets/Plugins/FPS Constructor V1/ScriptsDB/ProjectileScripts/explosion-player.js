@@ -89,7 +89,7 @@ function Start(){
 			hitPoints *= explosionDamage;
 
 			// Tell the rigidbody or any other script attached to the hit object how much damage is to be applied!
-			if(hit.gameObject.layer != 2){
+			if(hit.gameObject.layer != 2 && hit.gameObject.layer != LayerMask.NameToLayer("IgnorePlayer") && hit.gameObject.layer != LayerMask.NameToLayer("Player")){
 				sendArray[0] = hitPoints;
 				sendArray[1] = true;
 
