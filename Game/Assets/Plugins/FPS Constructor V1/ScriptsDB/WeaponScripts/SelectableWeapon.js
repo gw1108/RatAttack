@@ -41,6 +41,7 @@ function Interact(){
         }
         Destroy(gameObject);
     }
+    SendMessage("InteractingWithSelf", SendMessageOptions.DontRequireReceiver);
 }
 
 function select(a : boolean){

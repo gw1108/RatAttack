@@ -22,6 +22,9 @@ public class PushThings : MonoBehaviour
 
 	private Stopwatch timer;
 	private AudioSource m_source;
+	private KillTargetOnCollision killPlayer;
+	private Vector3 moveDir;
+	private bool killingPlayer = false;
 
 	void Start()
 	{
@@ -47,18 +50,14 @@ public class PushThings : MonoBehaviour
 
 	void OnControllerColliderHit(ControllerColliderHit hit)
 	{
-		var killPlayer = hit.gameObject.GetComponent<KillTargetOnCollision>();
-		if (killPlayer != null)
+		var tkillPlayer = hit.gameObject.GetComponent<KillTargetOnCollision>();
+		if (tkillPlayer != null)
 		{
-			var health = GetComponent<PlayerHealth>();
+			killPlayer = tkillPlayer;
 			if (!PlayerHealth.dead)
 			{
-				health.ApplyFallDamage(100.0f);
-				if (killPlayer.DeathSFX)
-				{
-					m_source.volume = killPlayer.vol;
-					m_source.PlayOneShot(killPlayer.DeathSFX);
-				}
+				moveDir = hit.moveDirection;
+				StartCoroutine("KillPlayer");
 			}
 		}
 
@@ -98,6 +97,32 @@ public class PushThings : MonoBehaviour
 			// Apply the push
 			hit.collider.attachedRigidbody.velocity = pushDir * pushPower;
 			PlayAudioClipNonRepeat(SFX);
+		}
+	}
+
+	private IEnumerator KillPlayer()
+	{
+		if (killingPlayer)
+		{
+		}
+		else
+		{
+			killingPlayer = true;
+
+			var health = GetComponent<PlayerHealth>();
+			health.ApplyDamage(killPlayer.damage);
+			if (killPlayer.DeathSFX)
+			{
+				m_source.volume = killPlayer.vol;
+				m_source.PlayOneShot(killPlayer.DeathSFX);
+			}
+			if(!killPlayer.repeats)
+			{
+				Destroy(killPlayer);
+			}
+
+			yield return new WaitForSeconds(killPlayer.delay);
+			killingPlayer = false;
 		}
 	}
 

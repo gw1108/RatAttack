@@ -141,7 +141,7 @@ Renderer:
   - {fileID: 2100000, guid: cbabbffc158145b4dadc2bd9fd202c33, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
+  m_UseLightProbes: 1
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
@@ -161,7 +161,7 @@ Renderer:
   - {fileID: 2100000, guid: 694eed80435df9e49812324214cd71e4, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
+  m_UseLightProbes: 1
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
@@ -181,7 +181,7 @@ Renderer:
   - {fileID: 2100000, guid: 4c212545ce0c03740b9fb6aa316fa5c0, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
+  m_UseLightProbes: 1
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
@@ -373,6 +373,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DeathSFX: {fileID: 8300000, guid: 2a9241dd63f951445b2ba7c6261aecfa, type: 3}
   vol: .899999976
+  delay: 0
+  damage: 65
+  repeats: 0
 --- !u!114 &11446818
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -389,6 +392,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 2aa48f913c6908146b0eba090e76687d, type: 3}
   - {fileID: 8300000, guid: b5434629bb8368d4eb060e29560bf42e, type: 3}
   vol: .800000012
+  heal: 10
 --- !u!114 &11446820
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -401,6 +405,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actuallyEquips: 0
+  particleEffectFade: {fileID: 0}
+  addsGrenades: 0
   weapon: {fileID: 0}
   WeaponInfo: {fileID: 0}
   isEquipped: 0

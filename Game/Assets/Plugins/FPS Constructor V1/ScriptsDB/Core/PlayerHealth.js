@@ -9,7 +9,6 @@
   For additional information contact us info@dastardlybanana.com.
 */
 
-@HideInInspector
 var health : float = 100; 
 var maxHealth : float = 100;
 var hitKickBack : float;
@@ -45,8 +44,6 @@ function Start(){
 	hitEffectTime = 0;
 	mainCam = PlayerWeapons.mainCam;
 	pWeapons = this.GetComponentInChildren(PlayerWeapons);
-	health = maxHealth;
-	
 }
 function ApplyFallDamage(d : float){
 	if(dead || !takesDamage)

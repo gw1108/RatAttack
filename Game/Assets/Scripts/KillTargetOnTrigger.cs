@@ -1,12 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[RequireComponent(typeof(BoxCollider))]
 public class KillTargetOnTrigger : MonoBehaviour {
 
 	public EnemyDamageReceiver DamageReceiver;
 	public PlayerHealth OtherDamageReceiver;
 	public GameObject RequiredCollision;
-	public float Damage = 100;
+	public float Damage = 100.0f;
 
 	private AudioSource m_source;
 
