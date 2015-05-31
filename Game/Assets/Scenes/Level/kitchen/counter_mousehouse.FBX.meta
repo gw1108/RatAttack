@@ -9,27 +9,42 @@ ModelImporter:
     100006: drawer001
     100008: drawer002
     100010: Object001
+    100012: bottom_cabinets00
+    100014: bottom_cabinets01
+    100016: bottom_cabinets02
     400000: counter
     400002: //RootNode
     400004: drawer
     400006: drawer001
     400008: drawer002
     400010: Object001
+    400012: bottom_cabinets00
+    400014: bottom_cabinets01
+    400016: bottom_cabinets02
     2300000: counter
     2300002: drawer
     2300004: drawer001
     2300006: drawer002
     2300008: Object001
+    2300010: bottom_cabinets00
+    2300012: bottom_cabinets01
+    2300014: bottom_cabinets02
     3300000: counter
     3300002: drawer
     3300004: drawer001
     3300006: drawer002
     3300008: Object001
+    3300010: bottom_cabinets00
+    3300012: bottom_cabinets01
+    3300014: bottom_cabinets02
     4300000: counter
     4300002: Object001
     4300004: drawer
     4300006: drawer001
     4300008: drawer002
+    4300010: bottom_cabinets00
+    4300012: bottom_cabinets01
+    4300014: bottom_cabinets02
     9500000: //RootNode
   materials:
     importMaterials: 1
