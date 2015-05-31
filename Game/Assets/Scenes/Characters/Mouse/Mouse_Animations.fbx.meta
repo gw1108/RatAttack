@@ -90,6 +90,7 @@ ModelImporter:
     7400002: HoldUp
     7400004: HoldUpEnd
     7400006: Take
+    7400008: Null
     9500000: //RootNode
     11100000: //RootNode
     13700000: geo_mouse_hands
@@ -438,6 +439,114 @@ ModelImporter:
       takeName: Take 001
       firstFrame: 198
       lastFrame: 230
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: bone_root01
+        weight: 1
+      - path: bone_root01/bone_l_arm01_upper01
+        weight: 1
+      - path: bone_root01/bone_l_arm01_upper01/bone_l_arm01_mid01
+        weight: 1
+      - path: bone_root01/bone_l_arm01_upper01/bone_l_arm01_mid01/bone_l_arm01_base01
+        weight: 1
+      - path: bone_root01/bone_l_arm01_upper01/bone_l_arm01_mid01/bone_l_arm01_base01/bone_l_arm01_finger01_01
+        weight: 1
+      - path: bone_root01/bone_l_arm01_upper01/bone_l_arm01_mid01/bone_l_arm01_base01/bone_l_arm01_finger01_01/bone_l_arm01_finger01_02
+        weight: 1
+      - path: bone_root01/bone_l_arm01_upper01/bone_l_arm01_mid01/bone_l_arm01_base01/bone_l_arm01_finger01_01/bone_l_arm01_finger01_02/bone_l_arm01_finger01_03
+        weight: 1
+      - path: bone_root01/bone_l_arm01_upper01/bone_l_arm01_mid01/bone_l_arm01_base01/bone_l_arm01_finger02_01
+        weight: 1
+      - path: bone_root01/bone_l_arm01_upper01/bone_l_arm01_mid01/bone_l_arm01_base01/bone_l_arm01_finger02_01/bone_l_arm01_finger02_02
+        weight: 1
+      - path: bone_root01/bone_l_arm01_upper01/bone_l_arm01_mid01/bone_l_arm01_base01/bone_l_arm01_finger02_01/bone_l_arm01_finger02_02/bone_l_arm01_finger02_03
+        weight: 1
+      - path: bone_root01/bone_l_arm01_upper01/bone_l_arm01_mid01/bone_l_arm01_base01/bone_l_arm01_finger03_01
+        weight: 1
+      - path: bone_root01/bone_l_arm01_upper01/bone_l_arm01_mid01/bone_l_arm01_base01/bone_l_arm01_finger03_01/bone_l_arm01_finger03_02
+        weight: 1
+      - path: bone_root01/bone_l_arm01_upper01/bone_l_arm01_mid01/bone_l_arm01_base01/bone_l_arm01_finger03_01/bone_l_arm01_finger03_02/bone_l_arm01_finger03_03
+        weight: 1
+      - path: bone_root01/bone_l_arm01_upper01/bone_l_arm01_mid01/bone_l_arm01_base01/bone_l_arm01_finger04_01
+        weight: 1
+      - path: bone_root01/bone_l_arm01_upper01/bone_l_arm01_mid01/bone_l_arm01_base01/bone_l_arm01_finger04_01/bone_l_arm01_finger04_02
+        weight: 1
+      - path: bone_root01/bone_l_arm01_upper01/bone_l_arm01_mid01/bone_l_arm01_base01/bone_l_arm01_finger04_01/bone_l_arm01_finger04_02/bone_l_arm01_finger04_03
+        weight: 1
+      - path: bone_root01/bone_l_arm01_upper01/bone_l_arm01_mid01/bone_l_arm01_base01/bone_l_arm01_finger05_01
+        weight: 1
+      - path: bone_root01/bone_l_arm01_upper01/bone_l_arm01_mid01/bone_l_arm01_base01/bone_l_arm01_finger05_01/bone_l_arm01_finger05_02
+        weight: 1
+      - path: bone_root01/bone_l_arm01_upper01/bone_l_arm01_mid01/bone_l_arm01_base01/bone_l_arm01_finger05_01/bone_l_arm01_finger05_02/bone_l_arm01_finger05_03
+        weight: 1
+      - path: bone_root01/bone_l_arm01_upper01/bone_l_arm01_mid01/bone_l_arm01_base01_twist01
+        weight: 1
+      - path: bone_root01/bone_r_arm01_upper01
+        weight: 1
+      - path: bone_root01/bone_r_arm01_upper01/bone_r_arm01_mid01
+        weight: 1
+      - path: bone_root01/bone_r_arm01_upper01/bone_r_arm01_mid01/bone_r_arm01_base01
+        weight: 1
+      - path: bone_root01/bone_r_arm01_upper01/bone_r_arm01_mid01/bone_r_arm01_base01/bone_r_arm01_finger01_01
+        weight: 1
+      - path: bone_root01/bone_r_arm01_upper01/bone_r_arm01_mid01/bone_r_arm01_base01/bone_r_arm01_finger01_01/bone_r_arm01_finger01_02
+        weight: 1
+      - path: bone_root01/bone_r_arm01_upper01/bone_r_arm01_mid01/bone_r_arm01_base01/bone_r_arm01_finger01_01/bone_r_arm01_finger01_02/bone_r_arm01_finger01_03
+        weight: 1
+      - path: bone_root01/bone_r_arm01_upper01/bone_r_arm01_mid01/bone_r_arm01_base01/bone_r_arm01_finger02_01
+        weight: 1
+      - path: bone_root01/bone_r_arm01_upper01/bone_r_arm01_mid01/bone_r_arm01_base01/bone_r_arm01_finger02_01/bone_r_arm01_finger02_02
+        weight: 1
+      - path: bone_root01/bone_r_arm01_upper01/bone_r_arm01_mid01/bone_r_arm01_base01/bone_r_arm01_finger02_01/bone_r_arm01_finger02_02/bone_r_arm01_finger02_03
+        weight: 1
+      - path: bone_root01/bone_r_arm01_upper01/bone_r_arm01_mid01/bone_r_arm01_base01/bone_r_arm01_finger03_01
+        weight: 1
+      - path: bone_root01/bone_r_arm01_upper01/bone_r_arm01_mid01/bone_r_arm01_base01/bone_r_arm01_finger03_01/bone_r_arm01_finger03_02
+        weight: 1
+      - path: bone_root01/bone_r_arm01_upper01/bone_r_arm01_mid01/bone_r_arm01_base01/bone_r_arm01_finger03_01/bone_r_arm01_finger03_02/bone_r_arm01_finger03_03
+        weight: 1
+      - path: bone_root01/bone_r_arm01_upper01/bone_r_arm01_mid01/bone_r_arm01_base01/bone_r_arm01_finger04_01
+        weight: 1
+      - path: bone_root01/bone_r_arm01_upper01/bone_r_arm01_mid01/bone_r_arm01_base01/bone_r_arm01_finger04_01/bone_r_arm01_finger04_02
+        weight: 1
+      - path: bone_root01/bone_r_arm01_upper01/bone_r_arm01_mid01/bone_r_arm01_base01/bone_r_arm01_finger04_01/bone_r_arm01_finger04_02/bone_r_arm01_finger04_03
+        weight: 1
+      - path: bone_root01/bone_r_arm01_upper01/bone_r_arm01_mid01/bone_r_arm01_base01/bone_r_arm01_finger05_01
+        weight: 1
+      - path: bone_root01/bone_r_arm01_upper01/bone_r_arm01_mid01/bone_r_arm01_base01/bone_r_arm01_finger05_01/bone_r_arm01_finger05_02
+        weight: 1
+      - path: bone_root01/bone_r_arm01_upper01/bone_r_arm01_mid01/bone_r_arm01_base01/bone_r_arm01_finger05_01/bone_r_arm01_finger05_02/bone_r_arm01_finger05_03
+        weight: 1
+      - path: bone_root01/bone_r_arm01_upper01/bone_r_arm01_mid01/bone_r_arm01_base01_twist01
+        weight: 1
+      - path: geo_mouse_hands
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Null
+      takeName: Take 001
+      firstFrame: 83
+      lastFrame: 98
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
