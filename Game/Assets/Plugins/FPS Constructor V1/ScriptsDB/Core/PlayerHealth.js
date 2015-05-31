@@ -34,6 +34,7 @@ private var mainCam : GameObject;
 static var dead : boolean = false;
 var deathSound : AudioClip;
 var directionalTexture : GameObject;
+public var takesDamage : boolean = true;
 
 static var singleton : PlayerHealth;
 
@@ -48,7 +49,7 @@ function Start(){
 	
 }
 function ApplyFallDamage(d : float){
-	if(dead)
+	if(dead || !takesDamage)
 		return;
 	
 	health = Mathf.Clamp(health-d, 0, health);
@@ -63,7 +64,7 @@ function ApplyFallDamage(d : float){
 }
 
 function ApplyDamage(d : float){
-	if(dead)
+	if(dead || !takesDamage)
 		return;
 	hitEffectTime = redFlashTime;
 	

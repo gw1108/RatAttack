@@ -86,7 +86,7 @@ static function Pickup (selectedWeapon : GameObject) {
 		}
 	}
 	
-	if(playerWeapons.weapons[playerWeapons.selectedWeapon] == selectedWeapon.GetComponent(SelectableWeapon).weapon){
+	if(selectedWeapon.GetComponent(SelectableWeapon) != null && playerWeapons.weapons[playerWeapons.selectedWeapon] == selectedWeapon.GetComponent(SelectableWeapon).weapon){
 		hasFlag = true;
 	}
 	var selectedWeaponInfo : WeaponInfo = selectedWeapon.GetComponent(SelectableWeapon).weapon.GetComponent(WeaponInfo);
