@@ -733,6 +733,7 @@ GameObject:
   - 95: {fileID: 9596392}
   - 111: {fileID: 11196392}
   - 54: {fileID: 5407778}
+  - 114: {fileID: 11421564}
   m_Layer: 0
   m_Name: DeadCat
   m_TagString: Untagged
@@ -1435,6 +1436,21 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!114 &11421564
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 196392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cafc70d30f332a14caccd338d8f83c88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  direction: {x: 0, y: -2, z: 0}
+  speed: 1
+  delay: .5
+  ignoreTimeScale: 0
 --- !u!137 &13796392
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

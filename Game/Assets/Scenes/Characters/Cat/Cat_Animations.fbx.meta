@@ -117,6 +117,8 @@ ModelImporter:
     400108: Swipe_Left_Sit_fr_500_530
     400110: Swipe_Sit_fr_200_130
     400112: Walk_fr_600_630
+    2300000: geo_cat
+    3300000: geo_cat
     4300000: geo_cat
     7400000: SitIdle
     7400002: CatSitAttack

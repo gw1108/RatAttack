@@ -138,6 +138,24 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &170116
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 470116}
+  - 65: {fileID: 6570116}
+  - 114: {fileID: 11470114}
+  - 114: {fileID: 11470116}
+  m_Layer: 0
+  m_Name: SelectCheese
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &178200
 GameObject:
   m_ObjectHideFlags: 0
@@ -342,7 +360,7 @@ Transform:
   - {fileID: 417524}
   - {fileID: 417528}
   m_Father: {fileID: 478200}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!4 &417520
 Transform:
   m_ObjectHideFlags: 1
@@ -430,16 +448,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 417520}
   m_RootOrder: 0
+--- !u!4 &470116
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170116}
+  m_LocalRotation: {x: -.707106829, y: 1.76152639e-08, z: 1.76152639e-08, w: .707106829}
+  m_LocalPosition: {x: -.709999979, y: .5, z: .00999999978}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 478200}
+  m_RootOrder: 0
 --- !u!4 &478200
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 178200}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 44.9399986, y: 21.8470001, z: -96.3399963}
+  m_LocalRotation: {x: 0, y: -.236484781, z: 0, w: .971635222}
+  m_LocalPosition: {x: 96.3799973, y: 21.8999996, z: -68.2799988}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 470116}
   - {fileID: 478202}
   - {fileID: 417518}
   - {fileID: 478204}
@@ -456,7 +487,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 478200}
-  m_RootOrder: 0
+  m_RootOrder: 1
 --- !u!4 &478204
 Transform:
   m_ObjectHideFlags: 1
@@ -476,7 +507,7 @@ Transform:
   - {fileID: 478218}
   - {fileID: 478220}
   m_Father: {fileID: 478200}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!4 &478206
 Transform:
   m_ObjectHideFlags: 1
@@ -1111,6 +1142,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.58999991, y: 1.92999995, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &6570116
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170116}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: .5, y: .5, z: .5}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!82 &8234226
 AudioSource:
   m_ObjectHideFlags: 1
@@ -1299,6 +1342,39 @@ MonoBehaviour:
   materialIndex: 0
   uvAnimationRate: {x: .100000001, y: -.100000001}
   textureName: _MainTex
+--- !u!114 &11470114
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f78290d9f7e52498c849a95fd9d04dae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actuallyEquips: 0
+  particleEffectFade: {fileID: 0}
+  addsGrenades: 0
+  destroysOnPickup: 1
+  weapon: {fileID: 0}
+  WeaponInfo: {fileID: 0}
+  isEquipped: 0
+  ammo: 0
+  upgradesApplied: 
+--- !u!114 &11470116
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 348e4fec9da984c66871490b1d23eaff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actuallyEquips: 1
+  selected: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
