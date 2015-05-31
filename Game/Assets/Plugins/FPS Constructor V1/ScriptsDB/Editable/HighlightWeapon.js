@@ -34,7 +34,7 @@ function HighlightOff () {
 function OnGUI () {
 	GUI.skin.box.wordWrap = true;
 	if(selected && !DBStoreController.inStore){
-		var s : String = "(E) to Select";
+		var s : String = "(Left Click) to Pickup";
 		if(equipped){
 			s = "(Already Equipped)";
 		}

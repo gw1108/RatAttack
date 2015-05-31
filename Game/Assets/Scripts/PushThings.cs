@@ -32,6 +32,19 @@ public class PushThings : MonoBehaviour
 		PlayerInstance = this;
 	}
 
+	void Update()
+	{
+		
+		if (Input.GetKey(KeyCode.Minus))
+		{
+			Time.timeScale = Mathf.Clamp01(Time.timeScale - 0.01f);
+		}
+		else if(Input.GetKey(KeyCode.Plus))
+		{
+			Time.timeScale = Mathf.Clamp01(Time.timeScale + 0.01f);
+		}
+	}
+
 	void OnControllerColliderHit(ControllerColliderHit hit)
 	{
 		var killPlayer = hit.gameObject.GetComponent<KillTargetOnCollision>();

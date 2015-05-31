@@ -463,14 +463,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d497e1f84e8b24bf4bfc6bfc4d764c7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionRadius: 15
-  explosionPower: -12000
-  explosionDamage: 300
-  explosionTimeout: 2
-  vFactor: -6
-  shakeFactor: 1.5
-  minHitShake: .0700000003
-  minShake: .00999999978
+  explosionRadius: 10
+  explosionPower: -4000
+  explosionDamage: 150
+  explosionTimeout: 1
+  vFactor: -3
+  shakeFactor: 1
+  minHitShake: .0500000007
+  minShake: .00100000005
   highestParent: 0
   parentArray: []
 --- !u!1002 &11400003
