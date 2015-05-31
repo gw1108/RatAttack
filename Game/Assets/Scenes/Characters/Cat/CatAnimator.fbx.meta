@@ -102,7 +102,8 @@ ModelImporter:
     400094: //RootNode
     400096: geo_cat
     4300000: geo_cat
-    7400000: Cat_Animations_Export
+    7400000: CatStandIdle
+    7400002: CatHop
     9500000: //RootNode
     13700000: geo_cat
   materials:
@@ -120,7 +121,255 @@ ModelImporter:
     animationScaleError: .5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: CatStandIdle
+      takeName: Cat_Animations_Export
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: bone_root01
+        weight: 1
+      - path: bone_root01/bone_l_leg01_top01
+        weight: 1
+      - path: bone_root01/bone_l_leg01_top01/bone_l_leg01_upper01
+        weight: 1
+      - path: bone_root01/bone_l_leg01_top01/bone_l_leg01_upper01/bone_l_leg01_mid01
+        weight: 1
+      - path: bone_root01/bone_l_leg01_top01/bone_l_leg01_upper01/bone_l_leg01_mid01/bone_l_leg01_base01
+        weight: 1
+      - path: bone_root01/bone_l_leg01_top01/bone_l_leg01_upper01/bone_l_leg01_mid01/bone_l_leg01_base01/bone_l_leg01_ball01
+        weight: 1
+      - path: bone_root01/bone_l_leg01_top01/bone_l_leg01_upper01/bone_l_leg01_mid01/bone_l_leg01_base01_twist01
+        weight: 1
+      - path: bone_root01/bone_r_leg01_top01
+        weight: 1
+      - path: bone_root01/bone_r_leg01_top01/bone_r_leg01_upper01
+        weight: 1
+      - path: bone_root01/bone_r_leg01_top01/bone_r_leg01_upper01/bone_r_leg01_mid01
+        weight: 1
+      - path: bone_root01/bone_r_leg01_top01/bone_r_leg01_upper01/bone_r_leg01_mid01/bone_r_leg01_base01
+        weight: 1
+      - path: bone_root01/bone_r_leg01_top01/bone_r_leg01_upper01/bone_r_leg01_mid01/bone_r_leg01_base01/bone_r_leg01_ball01
+        weight: 1
+      - path: bone_root01/bone_r_leg01_top01/bone_r_leg01_upper01/bone_r_leg01_mid01/bone_r_leg01_base01_twist01
+        weight: 1
+      - path: bone_root01/bone_spine01_01
+        weight: 1
+      - path: bone_root01/bone_spine01_01/bone_spine01_02
+        weight: 1
+      - path: bone_root01/bone_spine01_01/bone_spine01_02/bone_spine01_03
+        weight: 1
+      - path: bone_root01/bone_spine01_01/bone_spine01_02/bone_spine01_03/bone_l_arm01_top01
+        weight: 1
+      - path: bone_root01/bone_spine01_01/bone_spine01_02/bone_spine01_03/bone_l_arm01_top01/bone_l_arm01_upper01
+        weight: 1
+      - path: bone_root01/bone_spine01_01/bone_spine01_02/bone_spine01_03/bone_l_arm01_top01/bone_l_arm01_upper01/bone_l_arm01_mid01
+        weight: 1
+      - path: bone_root01/bone_spine01_01/bone_spine01_02/bone_spine01_03/bone_l_arm01_top01/bone_l_arm01_upper01/bone_l_arm01_mid01/bone_l_arm01_base01
+        weight: 1
+      - path: bone_root01/bone_spine01_01/bone_spine01_02/bone_spine01_03/bone_l_arm01_top01/bone_l_arm01_upper01/bone_l_arm01_mid01/bone_l_arm01_base01/bone_l_arm01_ball01
+        weight: 1
+      - path: bone_root01/bone_spine01_01/bone_spine01_02/bone_spine01_03/bone_l_arm01_top01/bone_l_arm01_upper01/bone_l_arm01_mid01/bone_l_arm01_base01_twist01
+        weight: 1
+      - path: bone_root01/bone_spine01_01/bone_spine01_02/bone_spine01_03/bone_neck01_01
+        weight: 1
+      - path: bone_root01/bone_spine01_01/bone_spine01_02/bone_spine01_03/bone_neck01_01/bone_head01
+        weight: 1
+      - path: bone_root01/bone_spine01_01/bone_spine01_02/bone_spine01_03/bone_neck01_01/bone_head01/bone_l_brow01
+        weight: 1
+      - path: bone_root01/bone_spine01_01/bone_spine01_02/bone_spine01_03/bone_neck01_01/bone_head01/bone_l_ear01
+        weight: 1
+      - path: bone_root01/bone_spine01_01/bone_spine01_02/bone_spine01_03/bone_neck01_01/bone_head01/bone_l_eye01
+        weight: 1
+      - path: bone_root01/bone_spine01_01/bone_spine01_02/bone_spine01_03/bone_neck01_01/bone_head01/bone_l_upperLip01
+        weight: 1
+      - path: bone_root01/bone_spine01_01/bone_spine01_02/bone_spine01_03/bone_neck01_01/bone_head01/bone_lowerLip01
+        weight: 1
+      - path: bone_root01/bone_spine01_01/bone_spine01_02/bone_spine01_03/bone_neck01_01/bone_head01/bone_nose01
+        weight: 1
+      - path: bone_root01/bone_spine01_01/bone_spine01_02/bone_spine01_03/bone_neck01_01/bone_head01/bone_r_brow01
+        weight: 1
+      - path: bone_root01/bone_spine01_01/bone_spine01_02/bone_spine01_03/bone_neck01_01/bone_head01/bone_r_ear01
+        weight: 1
+      - path: bone_root01/bone_spine01_01/bone_spine01_02/bone_spine01_03/bone_neck01_01/bone_head01/bone_r_eye01
+        weight: 1
+      - path: bone_root01/bone_spine01_01/bone_spine01_02/bone_spine01_03/bone_neck01_01/bone_head01/bone_r_upperLip01
+        weight: 1
+      - path: bone_root01/bone_spine01_01/bone_spine01_02/bone_spine01_03/bone_neck01_01/bone_head01_twist01
+        weight: 1
+      - path: bone_root01/bone_spine01_01/bone_spine01_02/bone_spine01_03/bone_neck01_01_twist01
+        weight: 1
+      - path: bone_root01/bone_spine01_01/bone_spine01_02/bone_spine01_03/bone_r_arm01_top01
+        weight: 1
+      - path: bone_root01/bone_spine01_01/bone_spine01_02/bone_spine01_03/bone_r_arm01_top01/bone_r_arm01_upper01
+        weight: 1
+      - path: bone_root01/bone_spine01_01/bone_spine01_02/bone_spine01_03/bone_r_arm01_top01/bone_r_arm01_upper01/bone_r_arm01_mid01
+        weight: 1
+      - path: bone_root01/bone_spine01_01/bone_spine01_02/bone_spine01_03/bone_r_arm01_top01/bone_r_arm01_upper01/bone_r_arm01_mid01/bone_r_arm01_base01
+        weight: 1
+      - path: bone_root01/bone_spine01_01/bone_spine01_02/bone_spine01_03/bone_r_arm01_top01/bone_r_arm01_upper01/bone_r_arm01_mid01/bone_r_arm01_base01/bone_r_arm01_ball01
+        weight: 1
+      - path: bone_root01/bone_spine01_01/bone_spine01_02/bone_spine01_03/bone_r_arm01_top01/bone_r_arm01_upper01/bone_r_arm01_mid01/bone_r_arm01_base01_twist01
+        weight: 1
+      - path: bone_root01/bone_tail01_01
+        weight: 1
+      - path: bone_root01/bone_tail01_01/bone_tail01_02
+        weight: 1
+      - path: bone_root01/bone_tail01_01/bone_tail01_02/bone_tail01_03
+        weight: 1
+      - path: bone_root01/bone_tail01_01/bone_tail01_02/bone_tail01_03/bone_tail01_04
+        weight: 1
+      - path: bone_root01/bone_tail01_01/bone_tail01_02/bone_tail01_03/bone_tail01_04/bone_tail01_05
+        weight: 1
+      - path: geo_cat
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: CatHop
+      takeName: Cat_Animations_Export
+      firstFrame: 600
+      lastFrame: 630
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: bone_root01
+        weight: 1
+      - path: bone_root01/bone_l_leg01_top01
+        weight: 1
+      - path: bone_root01/bone_l_leg01_top01/bone_l_leg01_upper01
+        weight: 1
+      - path: bone_root01/bone_l_leg01_top01/bone_l_leg01_upper01/bone_l_leg01_mid01
+        weight: 1
+      - path: bone_root01/bone_l_leg01_top01/bone_l_leg01_upper01/bone_l_leg01_mid01/bone_l_leg01_base01
+        weight: 1
+      - path: bone_root01/bone_l_leg01_top01/bone_l_leg01_upper01/bone_l_leg01_mid01/bone_l_leg01_base01/bone_l_leg01_ball01
+        weight: 1
+      - path: bone_root01/bone_l_leg01_top01/bone_l_leg01_upper01/bone_l_leg01_mid01/bone_l_leg01_base01_twist01
+        weight: 1
+      - path: bone_root01/bone_r_leg01_top01
+        weight: 1
+      - path: bone_root01/bone_r_leg01_top01/bone_r_leg01_upper01
+        weight: 1
+      - path: bone_root01/bone_r_leg01_top01/bone_r_leg01_upper01/bone_r_leg01_mid01
+        weight: 1
+      - path: bone_root01/bone_r_leg01_top01/bone_r_leg01_upper01/bone_r_leg01_mid01/bone_r_leg01_base01
+        weight: 1
+      - path: bone_root01/bone_r_leg01_top01/bone_r_leg01_upper01/bone_r_leg01_mid01/bone_r_leg01_base01/bone_r_leg01_ball01
+        weight: 1
+      - path: bone_root01/bone_r_leg01_top01/bone_r_leg01_upper01/bone_r_leg01_mid01/bone_r_leg01_base01_twist01
+        weight: 1
+      - path: bone_root01/bone_spine01_01
+        weight: 1
+      - path: bone_root01/bone_spine01_01/bone_spine01_02
+        weight: 1
+      - path: bone_root01/bone_spine01_01/bone_spine01_02/bone_spine01_03
+        weight: 1
+      - path: bone_root01/bone_spine01_01/bone_spine01_02/bone_spine01_03/bone_l_arm01_top01
+        weight: 1
+      - path: bone_root01/bone_spine01_01/bone_spine01_02/bone_spine01_03/bone_l_arm01_top01/bone_l_arm01_upper01
+        weight: 1
+      - path: bone_root01/bone_spine01_01/bone_spine01_02/bone_spine01_03/bone_l_arm01_top01/bone_l_arm01_upper01/bone_l_arm01_mid01
+        weight: 1
+      - path: bone_root01/bone_spine01_01/bone_spine01_02/bone_spine01_03/bone_l_arm01_top01/bone_l_arm01_upper01/bone_l_arm01_mid01/bone_l_arm01_base01
+        weight: 1
+      - path: bone_root01/bone_spine01_01/bone_spine01_02/bone_spine01_03/bone_l_arm01_top01/bone_l_arm01_upper01/bone_l_arm01_mid01/bone_l_arm01_base01/bone_l_arm01_ball01
+        weight: 1
+      - path: bone_root01/bone_spine01_01/bone_spine01_02/bone_spine01_03/bone_l_arm01_top01/bone_l_arm01_upper01/bone_l_arm01_mid01/bone_l_arm01_base01_twist01
+        weight: 1
+      - path: bone_root01/bone_spine01_01/bone_spine01_02/bone_spine01_03/bone_neck01_01
+        weight: 1
+      - path: bone_root01/bone_spine01_01/bone_spine01_02/bone_spine01_03/bone_neck01_01/bone_head01
+        weight: 1
+      - path: bone_root01/bone_spine01_01/bone_spine01_02/bone_spine01_03/bone_neck01_01/bone_head01/bone_l_brow01
+        weight: 1
+      - path: bone_root01/bone_spine01_01/bone_spine01_02/bone_spine01_03/bone_neck01_01/bone_head01/bone_l_ear01
+        weight: 1
+      - path: bone_root01/bone_spine01_01/bone_spine01_02/bone_spine01_03/bone_neck01_01/bone_head01/bone_l_eye01
+        weight: 1
+      - path: bone_root01/bone_spine01_01/bone_spine01_02/bone_spine01_03/bone_neck01_01/bone_head01/bone_l_upperLip01
+        weight: 1
+      - path: bone_root01/bone_spine01_01/bone_spine01_02/bone_spine01_03/bone_neck01_01/bone_head01/bone_lowerLip01
+        weight: 1
+      - path: bone_root01/bone_spine01_01/bone_spine01_02/bone_spine01_03/bone_neck01_01/bone_head01/bone_nose01
+        weight: 1
+      - path: bone_root01/bone_spine01_01/bone_spine01_02/bone_spine01_03/bone_neck01_01/bone_head01/bone_r_brow01
+        weight: 1
+      - path: bone_root01/bone_spine01_01/bone_spine01_02/bone_spine01_03/bone_neck01_01/bone_head01/bone_r_ear01
+        weight: 1
+      - path: bone_root01/bone_spine01_01/bone_spine01_02/bone_spine01_03/bone_neck01_01/bone_head01/bone_r_eye01
+        weight: 1
+      - path: bone_root01/bone_spine01_01/bone_spine01_02/bone_spine01_03/bone_neck01_01/bone_head01/bone_r_upperLip01
+        weight: 1
+      - path: bone_root01/bone_spine01_01/bone_spine01_02/bone_spine01_03/bone_neck01_01/bone_head01_twist01
+        weight: 1
+      - path: bone_root01/bone_spine01_01/bone_spine01_02/bone_spine01_03/bone_neck01_01_twist01
+        weight: 1
+      - path: bone_root01/bone_spine01_01/bone_spine01_02/bone_spine01_03/bone_r_arm01_top01
+        weight: 1
+      - path: bone_root01/bone_spine01_01/bone_spine01_02/bone_spine01_03/bone_r_arm01_top01/bone_r_arm01_upper01
+        weight: 1
+      - path: bone_root01/bone_spine01_01/bone_spine01_02/bone_spine01_03/bone_r_arm01_top01/bone_r_arm01_upper01/bone_r_arm01_mid01
+        weight: 1
+      - path: bone_root01/bone_spine01_01/bone_spine01_02/bone_spine01_03/bone_r_arm01_top01/bone_r_arm01_upper01/bone_r_arm01_mid01/bone_r_arm01_base01
+        weight: 1
+      - path: bone_root01/bone_spine01_01/bone_spine01_02/bone_spine01_03/bone_r_arm01_top01/bone_r_arm01_upper01/bone_r_arm01_mid01/bone_r_arm01_base01/bone_r_arm01_ball01
+        weight: 1
+      - path: bone_root01/bone_spine01_01/bone_spine01_02/bone_spine01_03/bone_r_arm01_top01/bone_r_arm01_upper01/bone_r_arm01_mid01/bone_r_arm01_base01_twist01
+        weight: 1
+      - path: bone_root01/bone_tail01_01
+        weight: 1
+      - path: bone_root01/bone_tail01_01/bone_tail01_02
+        weight: 1
+      - path: bone_root01/bone_tail01_01/bone_tail01_02/bone_tail01_03
+        weight: 1
+      - path: bone_root01/bone_tail01_01/bone_tail01_02/bone_tail01_03/bone_tail01_04
+        weight: 1
+      - path: bone_root01/bone_tail01_01/bone_tail01_02/bone_tail01_03/bone_tail01_04/bone_tail01_05
+        weight: 1
+      - path: geo_cat
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
     isReadable: 1
   meshes:
     lODScreenPercentages: []
