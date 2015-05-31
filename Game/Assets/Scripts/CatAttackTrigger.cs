@@ -11,7 +11,7 @@ using System.Diagnostics;
 public class CatAttackTrigger : MonoBehaviour
 {
 	public Animation catAnim;
-	public string attack = "CatSitAttack";
+	public string[] attack;
 	public float attackSpeed = 1.0f;
 	public float attackDuration = 1.0f;
 	public string idle = "SitIdle";
@@ -30,8 +30,10 @@ public class CatAttackTrigger : MonoBehaviour
 
 	private void CatAttack()
 	{
-		catAnim[attack].speed = attackSpeed;
-		catAnim.PlayQueued(attack, QueueMode.PlayNow);
+		int random = Random.Range(0, attack.Length);
+		string at = attack[random];
+		catAnim[at].speed = attackSpeed;
+		catAnim.PlayQueued(at, QueueMode.PlayNow);
 		catAnim.PlayQueued(idle);
 	}
 

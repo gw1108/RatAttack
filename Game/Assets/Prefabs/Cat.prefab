@@ -328,6 +328,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 452296}
+  - 65: {fileID: 6575370}
+  - 114: {fileID: 11475370}
   m_Layer: 0
   m_Name: bone_l_arm01_base01
   m_TagString: Untagged
@@ -389,6 +391,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 452302}
   - 65: {fileID: 6514028}
+  - 114: {fileID: 11419720}
   m_Layer: 0
   m_Name: bone_head01
   m_TagString: Untagged
@@ -760,6 +763,23 @@ GameObject:
   - 65: {fileID: 6557864}
   - 114: {fileID: 11457864}
   m_Layer: 0
+  m_Name: OtherAttackTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &193668
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 493668}
+  - 65: {fileID: 6593668}
+  - 114: {fileID: 11493668}
+  m_Layer: 0
   m_Name: AttackTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -778,6 +798,7 @@ Transform:
   m_Children:
   - {fileID: 452248}
   - {fileID: 452250}
+  - {fileID: 493668}
   - {fileID: 457864}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -1409,6 +1430,18 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 157864}
+  m_LocalRotation: {x: 0, y: -4.24599982e-08, z: 0, w: 1}
+  m_LocalPosition: {x: -3.58999991, y: 5.88999987, z: 9.44999981}
+  m_LocalScale: {x: 6.30722332, y: 4.66876888, z: 4.37350845}
+  m_Children: []
+  m_Father: {fileID: 452246}
+  m_RootOrder: 3
+--- !u!4 &493668
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193668}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.59000003, y: 5.88999987, z: 9.44999981}
   m_LocalScale: {x: 6.30722284, y: 4.66876936, z: 4.37350798}
@@ -1437,10 +1470,10 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 152296}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 7.5, y: 6.01000023, z: 7}
+  m_Size: {x: 9.53999996, y: 6.01000023, z: 7}
   m_Center: {x: -1.10000002, y: 1.12, z: 0}
 --- !u!65 &6514030
 BoxCollider:
@@ -1502,6 +1535,30 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.48000002, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &6575370
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 152288}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6, y: 6, z: 6}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &6593668
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193668}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!95 &9552342
 Animator:
   serializedVersion: 3
@@ -1531,6 +1588,8 @@ Animation:
   - {fileID: 7400002, guid: 0fa2b66b54d60b740acd3397d58a71ea, type: 3}
   - {fileID: 7400000, guid: 0fa2b66b54d60b740acd3397d58a71ea, type: 3}
   - {fileID: 7400006, guid: 0fa2b66b54d60b740acd3397d58a71ea, type: 3}
+  - {fileID: 7400008, guid: 0fa2b66b54d60b740acd3397d58a71ea, type: 3}
+  - {fileID: 7400010, guid: 0fa2b66b54d60b740acd3397d58a71ea, type: 3}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
@@ -1549,7 +1608,22 @@ MonoBehaviour:
   DamageReceiver: {fileID: 0}
   OtherDamageReceiver: {fileID: 0}
   RequiredCollision: {fileID: 0}
-  Damage: 100
+  Damage: 80
+--- !u!114 &11419720
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 152296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b37344b6077a9b469f3623fcc60b9c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DamageReceiver: {fileID: 0}
+  OtherDamageReceiver: {fileID: 0}
+  RequiredCollision: {fileID: 0}
+  Damage: 75
 --- !u!114 &11457864
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1562,8 +1636,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   catAnim: {fileID: 11114028}
-  attack: CatSitAttack
-  attackSpeed: 1.44000006
+  attack:
+  - CatSitAttack3
+  - CatSitAttack2
+  attackSpeed: 1.39999998
   attackDuration: 1.45000005
   idle: SitIdle
 --- !u!114 &11457866
@@ -1611,6 +1687,21 @@ MonoBehaviour:
   OtherDamageReceiver: {fileID: 0}
   RequiredCollision: {fileID: 0}
   Damage: 100
+--- !u!114 &11475370
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 152288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b37344b6077a9b469f3623fcc60b9c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DamageReceiver: {fileID: 0}
+  OtherDamageReceiver: {fileID: 0}
+  RequiredCollision: {fileID: 0}
+  Damage: 80
 --- !u!114 &11484716
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1630,6 +1721,24 @@ MonoBehaviour:
   playerObject: {fileID: 0}
   useHitEffect: 1
   isEnemy: 0
+--- !u!114 &11493668
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f18659c384fa0f48bca5688459c4287, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  catAnim: {fileID: 11114028}
+  attack:
+  - CatSitAttack
+  - CatSitAttack2
+  attackSpeed: 1.44000006
+  attackDuration: 1.45000005
+  idle: SitIdle
 --- !u!137 &13752342
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
