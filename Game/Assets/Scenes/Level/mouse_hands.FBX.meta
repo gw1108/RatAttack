@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7d1c16a4da5e73b438dbee15a71c957c
+guid: 2927351fa31fd8c42a6c00fe7232c807
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
@@ -9,7 +9,6 @@ ModelImporter:
     3300000: //RootNode
     4300000: Box001
     9500000: //RootNode
-    11100000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0
@@ -61,6 +60,6 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 1
+  animationType: 2
   additionalBone: 0
   userData: 
