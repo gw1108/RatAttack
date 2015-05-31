@@ -44,6 +44,12 @@ ModelImporter:
     100076: bone_root01
     100078: geo_mouse_hands
     100080: //RootNode
+    100082: Cheese_Rig:bone_cheese01
+    100084: Cheese_Rig:bone_cheese02
+    100086: Cheese_Rig:bone_cheese03
+    100088: Cheese_Rig:bone_cheese04
+    100090: Cheese_Rig:bone_root01
+    100092: Cheese_Rig:geo_cheese
     400000: bone_l_arm01_base01
     400002: bone_l_arm01_base01_twist01
     400004: bone_l_arm01_finger01_01
@@ -85,7 +91,14 @@ ModelImporter:
     400076: bone_root01
     400078: geo_mouse_hands
     400080: //RootNode
+    400082: Cheese_Rig:bone_cheese01
+    400084: Cheese_Rig:bone_cheese02
+    400086: Cheese_Rig:bone_cheese03
+    400088: Cheese_Rig:bone_cheese04
+    400090: Cheese_Rig:bone_root01
+    400092: Cheese_Rig:geo_cheese
     4300000: geo_mouse_hands
+    4300002: Cheese_Rig:geo_cheese
     7400000: Walk
     7400002: HoldUp
     7400004: HoldUpEnd
@@ -94,6 +107,7 @@ ModelImporter:
     9500000: //RootNode
     11100000: //RootNode
     13700000: geo_mouse_hands
+    13700002: Cheese_Rig:geo_cheese
   materials:
     importMaterials: 1
     materialName: 0
