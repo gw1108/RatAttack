@@ -104,8 +104,11 @@ function Detonate(){
 		var dead : Rigidbody = Instantiate(deadReplacement, transform.position, transform.rotation);
 
 		// For better effect we assign the same velocity to the exploded gameObject
+        if(!dead.isKinematic)
+        {
 		dead.rigidbody.velocity = rigidbody.velocity;
 		dead.angularVelocity = rigidbody.angularVelocity;
+        }
 	}
 	
 	// If there is a particle emitter stop emitting and detach so it doesnt get destroyed right away

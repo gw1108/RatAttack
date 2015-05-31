@@ -22,6 +22,7 @@ public class PushThings : MonoBehaviour
 
 	private Stopwatch timer;
 	private AudioSource m_source;
+	private KillTargetOnCollision killPlayer;
 
 	void Start()
 	{
@@ -47,18 +48,13 @@ public class PushThings : MonoBehaviour
 
 	void OnControllerColliderHit(ControllerColliderHit hit)
 	{
-		var killPlayer = hit.gameObject.GetComponent<KillTargetOnCollision>();
-		if (killPlayer != null)
+		var tkillPlayer = hit.gameObject.GetComponent<KillTargetOnCollision>();
+		if (tkillPlayer != null)
 		{
-			var health = GetComponent<PlayerHealth>();
+			killPlayer = tkillPlayer;
 			if (!PlayerHealth.dead)
 			{
-				health.ApplyFallDamage(100.0f);
-				if (killPlayer.DeathSFX)
-				{
-					m_source.volume = killPlayer.vol;
-					m_source.PlayOneShot(killPlayer.DeathSFX);
-				}
+				StartCoroutine("KillPlayer");
 			}
 		}
 
@@ -98,6 +94,18 @@ public class PushThings : MonoBehaviour
 			// Apply the push
 			hit.collider.attachedRigidbody.velocity = pushDir * pushPower;
 			PlayAudioClipNonRepeat(SFX);
+		}
+	}
+
+	private IEnumerator KillPlayer()
+	{
+		yield return new WaitForSeconds(killPlayer.delay);
+		var health = GetComponent<PlayerHealth>();
+		health.ApplyFallDamage(100.0f);
+		if (killPlayer.DeathSFX)
+		{
+			m_source.volume = killPlayer.vol;
+			m_source.PlayOneShot(killPlayer.DeathSFX);
 		}
 	}
 
